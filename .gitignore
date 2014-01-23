@@ -1,0 +1,17 @@
+.DS_Store
+*.lst
+*.swp
+*.xml
+*.log
+*.owl
+*.rdf
+*.nt
+*.db
+*~
+*.gz
+*.bz2
+*.out
+*.csv
+*.swn
+*.swo
+*.swm
