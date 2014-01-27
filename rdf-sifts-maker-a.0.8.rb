@@ -803,7 +803,7 @@ opts.on("-c", "--cath", "convert to the RDF-SIFTS CATH.") do |cath|
   run = RDFSIFTS.new
   run.cath
 end
-opts.on("-e", "--cath", "convert to the RDF-SIFTS Enzyme.") do |enzyme|
+opts.on("-e", "--enzyme", "convert to the RDF-SIFTS Enzyme.") do |enzyme|
   run = RDFSIFTS.new
   run.enzyme
 end
