@@ -1,7 +1,7 @@
 #! /usr/bin/ruby
 ## -*- cofing:utf-8 -*-
 #
-#  『RDF-SIFTS Maker』alpha version 0.7
+#  『RDF-SIFTS Maker』alpha version 0.8
 #   by Yusuke Komiyama
 #
 #  開発に使用したrubyのバージョン
@@ -718,6 +718,7 @@ def cath
     upr = RDF::Vocabulary.new("http://www.uniprot.org/uniprot/")
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
+    dbp = RDF::Vocabulary.new("http://dbpedia.org/resource/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS Enzyme』 
@@ -738,8 +739,13 @@ def cath
           pdb_top = pdbr.to_s + row0.to_s
           pdb_top_uri = RDF::URI.new(pdb_top)
 
-          uniprotac = upr.to_s + row2.to_s
-          upac_uri = RDF::URI.new(uniprotac)
+          if /\w/ =~ row2
+	    uniprotac = upr.to_s + row2.to_s
+            upac_uri = RDF::URI.new(uniprotac)
+	  else
+	    uniprotac = dbp.to_s + "N/a"
+            upac_uri = RDF::URI.new(uniprotac)
+	  end
 
           ec_code = idorg.to_s + "ec-code/" + row3.to_s
           ec_code_uri = RDF::URI.new(ec_code)
@@ -753,7 +759,10 @@ def cath
             graph.insert([root_uri, RDF::DC.identifier, bnode1])
 	      graph.insert([bnode1, rdf.type, edam.data_0954])
 	      graph.insert([bnode1, edam.has_identifier, upac_uri])
-                graph.insert([upac_uri, rdf.type, up.Protein])
+	        if /\w/ =~ row2
+                  graph.insert([upac_uri, rdf.type, up.Protein])
+		else
+		end
 	      graph.insert([bnode1, edam.has_identifier, ec_code_uri])
                 graph.insert([ec_code_uri, rdf.type, edam.data_1011])
           end
