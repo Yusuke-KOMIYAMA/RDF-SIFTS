@@ -57,6 +57,7 @@ class RDFSIFTS
     upr = RDF::Vocabulary.new("http://www.uniprot.org/uniprot/")
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
+    ut = RDF::Vocabulary.new("http://utprot.org/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS SCOP』 
@@ -72,10 +73,10 @@ class RDFSIFTS
 
         if /^#/ =~ row0
         else
-          pdb_resource = pdbr.to_s + row0.to_s + "/struct_asym/" + row1.to_s
+          pdb_resource = ut.to_s + "pdb/" + row0.to_s + "/auth_asym/" + row1.to_s
           root_uri = RDF::URI.new(pdb_resource)
 
-          pdb_top = pdbr.to_s + row0.to_s
+          pdb_top = ut.to_s + row0.to_s
           pdb_top_uri = RDF::URI.new(pdb_top)
 
           uniprotac = upr.to_s + row2.to_s
@@ -146,6 +147,7 @@ class RDFSIFTS
     upr = RDF::Vocabulary.new("http://www.uniprot.org/uniprot/")
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
+    ut = RDF::Vocabulary.new("http://utprot.org/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS CATH』 
@@ -160,7 +162,7 @@ class RDFSIFTS
 
         if /^#/ =~ row0
         else
-          pdb_resource = pdbr.to_s + row0.to_s + "/struct_asym/" + row1.to_s
+          pdb_resource = ut.to_s + "pdb/" + row0.to_s + "/auth_asym/" + row1.to_s	  
           root_uri = RDF::URI.new(pdb_resource)
 
           pdb_top = pdbr.to_s + row0.to_s
@@ -308,6 +310,7 @@ class RDFSIFTS
     pdbr = RDF::Vocabulary.new("http://rdf.wwpdb.org/pdb/")
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
+    ut = RDF::Vocabulary.new("http://utprot.org/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS Taxonomy』 
@@ -322,7 +325,7 @@ class RDFSIFTS
 
         if /^#/ =~ row0
         else
-          pdb_resource = pdbr.to_s + row0.to_s + "/struct_asym/" + row1.to_s
+          pdb_resource = ut.to_s + "pdb/" + row0.to_s + "/auth_asym/" + row1.to_s
           root_uri = RDF::URI.new(pdb_resource)
 
           pdb_top = pdbr.to_s + row0.to_s
@@ -387,6 +390,7 @@ class RDFSIFTS
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
     faldo = RDF::Vocabulary.new("http://biohackathon.org/resource/faldo#")
+    ut = RDF::Vocabulary.new("http://utprot.org/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS UniProt』 
@@ -406,7 +410,7 @@ class RDFSIFTS
 
         if /^#/ =~ row0
         else
-          pdb_resource = pdbr.to_s + row0.to_s + "/struct_asym/" + row1.to_s
+	  pdb_resource = ut.to_s + "pdb/" + row0.to_s + "/auth_asym/" + row1.to_s
           root_uri = RDF::URI.new(pdb_resource)
 
           pdb_top = pdbr.to_s + row0.to_s
@@ -515,6 +519,7 @@ class RDFSIFTS
     pdbr = RDF::Vocabulary.new("http://rdf.wwpdb.org/pdb/")
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
+    ut = RDF::Vocabulary.new("http://utprot.org/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS InterPro』 
@@ -528,7 +533,7 @@ class RDFSIFTS
 
         if /^#/ =~ row0
         else
-          pdb_resource = pdbr.to_s + row0.to_s + "/struct_asym/" + row1.to_s
+          pdb_resource = ut.to_s + "pdb/" + row0.to_s + "/auth_asym/" + row1.to_s
           root_uri = RDF::URI.new(pdb_resource)
 
           pdb_top = pdbr.to_s + row0.to_s
@@ -592,6 +597,7 @@ class RDFSIFTS
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
     biopax = RDF::Vocabulary.new("http://www.biopax.org/release/biopax-level3.owl#")
+    ut = RDF::Vocabulary.new("http://utprot.org/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS GO』 
@@ -609,7 +615,7 @@ class RDFSIFTS
 
         if /^#/ =~ row0
         else
-          pdb_resource = pdbr.to_s + row0.to_s + "/struct_asym/" + row1.to_s
+	  pdb_resource = ut.to_s + "pdb/" + row0.to_s + "/auth_asym/" + row1.to_s
           root_uri = RDF::URI.new(pdb_resource)
 
           pdb_top = pdbr.to_s + row0.to_s
@@ -690,6 +696,7 @@ class RDFSIFTS
     upr = RDF::Vocabulary.new("http://www.uniprot.org/uniprot/")
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
+    ut = RDF::Vocabulary.new("http://utprot.org/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS Pfam』 
@@ -704,7 +711,7 @@ class RDFSIFTS
 
         if /^#/ =~ row0
         else
-          pdb_resource = pdbr.to_s + row0.to_s + "/struct_asym/" + row1.to_s
+	  pdb_resource = ut.to_s + "pdb/" + row0.to_s + "/auth_asym/" + row1.to_s
           root_uri = RDF::URI.new(pdb_resource)
 
           pdb_top = pdbr.to_s + row0.to_s
@@ -773,6 +780,7 @@ class RDFSIFTS
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
     dbp = RDF::Vocabulary.new("http://dbpedia.org/resource/")
+    ut = RDF::Vocabulary.new("http://utprot.org/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS Enzyme』 
@@ -787,7 +795,7 @@ class RDFSIFTS
 
         if /^#/ =~ row0
         else
-          pdb_resource = pdbr.to_s + row0.to_s + "/struct_asym/" + row1.to_s
+          pdb_resource = ut.to_s + "pdb/" + row0.to_s + "/auth_asym/" + row1.to_s
           root_uri = RDF::URI.new(pdb_resource)
 
           pdb_top = pdbr.to_s + row0.to_s
@@ -827,6 +835,67 @@ class RDFSIFTS
 #=end
   end
 
+  def asymConvert
+  #########################################################
+  #    『RDF-SIFTS asymConvert』メソッド
+  #########################################################
+#
+#=begin
+    #########################################################
+    #    RDF.rbでクラス定義されていないPREFIXの読み込み
+    #########################################################
+    edam = RDF::Vocabulary.new("http://edamontology.org/")
+    pdbo = RDF::Vocabulary.new("http://rdf.wwpdb.org/schema/pdbx-v40.owl#")
+    pdbr = RDF::Vocabulary.new("http://rdf.wwpdb.org/pdb/")
+    up = RDF::Vocabulary.new("http://purl.uniprot.org/core/")
+    upr = RDF::Vocabulary.new("http://www.uniprot.org/uniprot/")
+    rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
+    idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
+    dbp = RDF::Vocabulary.new("http://dbpedia.org/resource/")
+    ut = RDF::Vocabulary.new("http://utprot.org/")
+
+    #########################################################
+    #   RDFのグラフモデルの組み立て 『RDF-SIFTS Asym』 
+    #########################################################
+    print "The transformation of RDF-SIFTS Asym "
+    RDF::Writer.open("./pdb_chain_labelasym.nt") do |writer|
+      CSV.foreach('./data/pdb_chain_labelasym.list', headers:true, col_sep:'	') {|row|
+        row0 = row[0].upcase # PDB
+        row1 = row[1].upcase # AUTH_ASYM_ID (CHAIN)
+        row2 = row[2].upcase # LABEL_ASYM_ID
+
+        if /^#/ =~ row0
+        else
+          pdb_resource = ut.to_s + "pdb/" + row0.to_s + "/auth_asym/" + row1.to_s
+          root_uri = RDF::URI.new(pdb_resource)
+
+          label_asym = pdbr.to_s + row0.to_s + "/struct_asym/" + row2.to_s
+          label_asym_uri = RDF::URI.new(label_asym)
+
+          pdb_top = pdbr.to_s + row0.to_s
+          pdb_top_uri = RDF::URI.new(pdb_top)
+
+	  property1 = pdbo.to_s + "struct_asym.id"
+          property1_uri = RDF::URI.new(property1)
+
+          writer << RDF::Graph.new do |graph|
+            bnode1 = RDF::Node.uuid.to_s.insert(0,"genid").delete("-").delete("_:")
+	    bnode1 = RDF::Node.new(bnode1)
+	    graph.insert([root_uri, rdf.type, edam.data_1008])
+            graph.insert([root_uri, pdbo.of_datablock, pdb_top_uri])
+	      graph.insert([pdb_top_uri, rdf.type, edam.data_1127])
+	    graph.insert([root_uri, property1_uri, label_asym_uri])
+	      graph.insert([label_asym_uri, rdf.type, pdbo.struct_asym])
+	      graph.insert([label_asym_uri, pdbo.of_datablock, pdb_top_uri])
+          end
+        end
+      }
+    end
+    print "was completed!\n"
+#=end
+  end
+
+
 end
 
 
@@ -840,7 +909,7 @@ opts.banner = "Usage: rdf-sifts-maker.rb [options]"
 opts.separator ""
 opts.separator "Specific options:"
 
-opts.on("-a", "--all", "convert to the all RDF-SIFTS.") do |all|
+opts.on("-f", "--full", "Download and convert to all RDF-SIFTS.") do |all|
   run = RDFSIFTS.new
   run.cathGet
   run.cathConvert
@@ -860,8 +929,9 @@ opts.on("-a", "--all", "convert to the all RDF-SIFTS.") do |all|
   run.taxonomyConvert
   run.uniprotGet
   run.uniprotConvert
+  run.asymConvert
 end
-opts.on("-r", "--run", "convert to the all RDF-SIFTS.") do |all|
+opts.on("-r", "--run", "Convert only to all RDF-SIFTS.") do |all|
   run = RDFSIFTS.new
   run.cathConvert
   run.enzymeConvert
@@ -872,8 +942,9 @@ opts.on("-r", "--run", "convert to the all RDF-SIFTS.") do |all|
   run.scopConvert
   run.taxonomyConvert
   run.uniprotConvert
+  run.asymConvert
 end
-opts.on("-d", "--download", "download all SIFTS files from EBI.") do |all|
+opts.on("-d", "--download", "Download only to all RDF-SIFTS.") do |all|
   run = RDFSIFTS.new
   run.cathGet
   run.enzymeGet
@@ -885,49 +956,53 @@ opts.on("-d", "--download", "download all SIFTS files from EBI.") do |all|
   run.taxonomyGet
   run.uniprotGet
 end
-opts.on("-c", "--cath", "convert to the RDF-SIFTS CATH.") do |cath|
+opts.on("-a", "--asym", "Convert to the RDF-SIFTS Asym.") do |cath|
   run = RDFSIFTS.new
-#  run.cathGet
+  run.asymConvert
+end
+opts.on("-c", "--cath", "Convert to the RDF-SIFTS CATH.") do |cath|
+  run = RDFSIFTS.new
+  run.cathGet
   run.cathConvert
 end
-opts.on("-e", "--enzyme", "convert to the RDF-SIFTS Enzyme.") do |enzyme|
+opts.on("-e", "--enzyme", "Convert to the RDF-SIFTS Enzyme.") do |enzyme|
   run = RDFSIFTS.new
-#  run.enzymeGet
+  run.enzymeGet
   run.enzymeConvert
 end
-opts.on("-g", "--go", "convert to the RDF-SIFTS GO.") do |go|
+opts.on("-g", "--go", "Convert to the RDF-SIFTS GO.") do |go|
   run = RDFSIFTS.new
-#  run.goGet
+  run.goGet
   run.goConvert
 end
-opts.on("-i", "--interpro", "convert to the RDF-SIFTS InterPro.") do |interpro|
+opts.on("-i", "--interpro", "Convert to the RDF-SIFTS InterPro.") do |interpro|
   run = RDFSIFTS.new
-#  run.interproGet
+  run.interproGet
   run.interproConvert
 end
-opts.on("-m", "--pubmed", "convert to the RDF-SIFTS PubMed.") do |pubmed|
+opts.on("-m", "--pubmed", "Convert to the RDF-SIFTS PubMed.") do |pubmed|
   run = RDFSIFTS.new
-#  run.pubmedGet
+  run.pubmedGet
   run.pubmedConvert
 end
-opts.on("-p", "--pfam", "convert to the RDF-SIFTS Pfam.") do |pfam|
+opts.on("-p", "--pfam", "Convert to the RDF-SIFTS Pfam.") do |pfam|
   run = RDFSIFTS.new
-#  run.pfamGet
+  run.pfamGet
   run.pfamConvert 
 end
-opts.on("-s", "--scop", "convert to the RDF-SIFTS SCOP.") do |scop|
+opts.on("-s", "--scop", "Convert to the RDF-SIFTS SCOP.") do |scop|
   run = RDFSIFTS.new
-#  run.scopGet
+  run.scopGet
   run.scopConvert
 end
-opts.on("-t", "--taxonomy", "convert to the RDF-SIFTS Taxonomy.") do |taxonomy|
+opts.on("-t", "--taxonomy", "Convert to the RDF-SIFTS Taxonomy.") do |taxonomy|
   run = RDFSIFTS.new
-#  run.taxonomyGet
+  run.taxonomyGet
   run.taxonomyConvert
 end
-opts.on("-u", "--uniprot", "convert to the RDF-SIFTS UniProt.") do |uniprot|
+opts.on("-u", "--uniprot", "Convert to the RDF-SIFTS UniProt.") do |uniprot|
   run = RDFSIFTS.new
-#  run.uniprotGet
+  run.uniprotGet
   run.uniprotConvert
 end
 
@@ -935,7 +1010,7 @@ end
 opts.separator ""
 opts.separator "Common options:"
 
-opts.on_tail("-h", "--help", "show this message") do
+opts.on_tail("-h", "--help", "Show this message") do
   puts opts
   exit
 end
