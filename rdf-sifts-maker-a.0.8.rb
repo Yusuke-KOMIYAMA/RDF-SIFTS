@@ -778,7 +778,7 @@ opts.banner = "Usage: rdf-sifts-maker.rb [options]"
 opts.separator ""
 opts.separator "Specific options:"
 
-opts.on("-a", "--all", "convert to the all RDF-SIFTS.") do |cath|
+opts.on("-a", "--all", "convert to the all RDF-SIFTS.") do |all|
   run = RDFSIFTS.new
   run.cath
   run.enzyme
