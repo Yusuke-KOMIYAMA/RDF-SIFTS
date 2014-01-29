@@ -35,7 +35,7 @@ class RDFSIFTS
     ftp.passive = true
     ftp.chdir('pub/databases/msd/sifts/text')
     files = ftp.list('*.lst')
-    ftp.gettextfile('pdb_chain_scop_uniprot.lst', 'pdb_chain_scop_uniprot.lst')
+    ftp.gettextfile('pdb_chain_scop_uniprot.lst', './download/pdb_chain_scop_uniprot.lst')
     ftp.close
     print "was completed!\n"
 #=end
@@ -57,14 +57,14 @@ class RDFSIFTS
     upr = RDF::Vocabulary.new("http://www.uniprot.org/uniprot/")
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
-    ut = RDF::Vocabulary.new("http://utprot.org/")
+    ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS SCOP』 
     #########################################################
     print "The transformation of RDF-SIFTS SCOP "
-    RDF::Writer.open("pdb_chain_scop_uniprot.nt") do |writer|
-      CSV.foreach('./pdb_chain_scop_uniprot.lst', headers:true, col_sep:'	') {|row|
+    RDF::Writer.open("./result/pdb_chain_scop_uniprot.nt") do |writer|
+      CSV.foreach('./download/pdb_chain_scop_uniprot.lst', headers:true, col_sep:'	') {|row|
         row0 = row[0].upcase # PDB
         row1 = row[1].upcase # CHAIN
         row2 = row[2].upcase # SP_PRIMARY
@@ -125,7 +125,7 @@ class RDFSIFTS
     ftp.passive = true
     ftp.chdir('pub/databases/msd/sifts/text')
     files = ftp.list('*.lst')
-    ftp.gettextfile('pdb_chain_cath_uniprot.lst', 'pdb_chain_cath_uniprot.lst')
+    ftp.gettextfile('pdb_chain_cath_uniprot.lst', './download/pdb_chain_cath_uniprot.lst')
     ftp.close
     print "was completed!\n"
 #=end
@@ -147,14 +147,14 @@ class RDFSIFTS
     upr = RDF::Vocabulary.new("http://www.uniprot.org/uniprot/")
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
-    ut = RDF::Vocabulary.new("http://utprot.org/")
+    ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS CATH』 
     #########################################################
     print "The transformation of RDF-SIFTS CATH "
-    RDF::Writer.open("pdb_chain_cath_uniprot.nt") do |writer|
-      CSV.foreach('./pdb_chain_cath_uniprot.lst', headers:true, col_sep:'	') {|row|
+    RDF::Writer.open("./result/pdb_chain_cath_uniprot.nt") do |writer|
+      CSV.foreach('./download/pdb_chain_cath_uniprot.lst', headers:true, col_sep:'	') {|row|
         row0 = row[0].upcase # PDB
         row1 = row[1].upcase # CHAIN
         row2 = row[2].upcase # SP_PRIMARY
@@ -209,7 +209,7 @@ class RDFSIFTS
     ftp.passive = true
     ftp.chdir('pub/databases/msd/sifts/text')
     files = ftp.list('*.lst')
-    ftp.gettextfile('pdb_pubmed.lst', 'pdb_pubmed.lst')
+    ftp.gettextfile('pdb_pubmed.lst', './download/pdb_pubmed.lst')
     ftp.close
     print "was completed!\n"
 #=end
@@ -235,8 +235,8 @@ class RDFSIFTS
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS PubMed』 
     #########################################################
     print "The transformation of RDF-SIFTS PubMed "
-    RDF::Writer.open("pdb_pubmed.nt") do |writer|
-      CSV.foreach('./pdb_pubmed.lst', headers:true, col_sep:'	') {|row|
+    RDF::Writer.open("./result/pdb_pubmed.nt") do |writer|
+      CSV.foreach('./download/pdb_pubmed.lst', headers:true, col_sep:'	') {|row|
         row0 = row[0].upcase # PDB
         row1 = row[1].upcase # ORDINAL
         row2 = row[2].upcase # PUBMED_ID
@@ -290,7 +290,7 @@ class RDFSIFTS
     ftp.passive = true
     ftp.chdir('pub/databases/msd/sifts/text')
     files = ftp.list('*.lst')
-    ftp.gettextfile('pdb_chain_taxonomy.lst', 'pdb_chain_taxonomy.lst')
+    ftp.gettextfile('pdb_chain_taxonomy.lst', './download/pdb_chain_taxonomy.lst')
     ftp.close
     print "was completed!\n"
 #=end
@@ -310,14 +310,14 @@ class RDFSIFTS
     pdbr = RDF::Vocabulary.new("http://rdf.wwpdb.org/pdb/")
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
-    ut = RDF::Vocabulary.new("http://utprot.org/")
+    ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS Taxonomy』 
     #########################################################
     print "The transformation of RDF-SIFTS Taxonomy "
-    RDF::Writer.open("pdb_chain_taxonomy.nt") do |writer|
-      CSV.foreach('./pdb_chain_taxonomy.lst', headers:true, col_sep:'	') {|row|
+    RDF::Writer.open("./result//pdb_chain_taxonomy.nt") do |writer|
+      CSV.foreach('./download/pdb_chain_taxonomy.lst', headers:true, col_sep:'	') {|row|
         row0 = row[0].upcase # PDB
         row1 = row[1].upcase # CHAIN
         row2 = row[2].upcase # TAX_ID
@@ -367,7 +367,7 @@ class RDFSIFTS
     ftp.passive = true
     ftp.chdir('pub/databases/msd/sifts/text')
     files = ftp.list('*.lst')
-    ftp.gettextfile('pdb_chain_uniprot.lst', 'pdb_chain_uniprot.lst')
+    ftp.gettextfile('pdb_chain_uniprot.lst', './download/pdb_chain_uniprot.lst')
     ftp.close
     print "was completed!\n"
 #=end
@@ -390,14 +390,14 @@ class RDFSIFTS
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
     faldo = RDF::Vocabulary.new("http://biohackathon.org/resource/faldo#")
-    ut = RDF::Vocabulary.new("http://utprot.org/")
+    ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS UniProt』 
     #########################################################
     print "The transformation of RDF-SIFTS UniProt "
-    RDF::Writer.open("pdb_chain_uniprot.nt") do |writer|
-      CSV.foreach('./pdb_chain_uniprot.lst', headers:true, col_sep:'	') {|row|
+    RDF::Writer.open("./result/pdb_chain_uniprot.nt") do |writer|
+      CSV.foreach('./download/pdb_chain_uniprot.lst', headers:true, col_sep:'	') {|row|
         row0 = row[0].upcase # PDB
         row1 = row[1].upcase # CHAIN
         row2 = row[2].upcase # SP_PRIMARY
@@ -499,7 +499,7 @@ class RDFSIFTS
     ftp.passive = true
     ftp.chdir('pub/databases/msd/sifts/text')
     files = ftp.list('*.lst')
-    ftp.gettextfile('pdb_chain_interpro.lst', 'pdb_chain_interpro.lst')
+    ftp.gettextfile('pdb_chain_interpro.lst', './download/pdb_chain_interpro.lst')
     ftp.close
     print "was completed!\n"
 #=end
@@ -519,14 +519,14 @@ class RDFSIFTS
     pdbr = RDF::Vocabulary.new("http://rdf.wwpdb.org/pdb/")
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
-    ut = RDF::Vocabulary.new("http://utprot.org/")
+    ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS InterPro』 
     #########################################################
     print "The transformation of RDF-SIFTS InterPro "
-    RDF::Writer.open("pdb_chain_interpro.nt") do |writer|
-      CSV.foreach('./pdb_chain_interpro.lst', headers:true, col_sep:'	') {|row|
+    RDF::Writer.open("./result/pdb_chain_interpro.nt") do |writer|
+      CSV.foreach('./download/pdb_chain_interpro.lst', headers:true, col_sep:'	') {|row|
         row0 = row[0].upcase # PDB
         row1 = row[1].upcase # CHAIN
         row2 = row[2].upcase # INTERPRO_ID
@@ -574,7 +574,7 @@ class RDFSIFTS
     ftp.passive = true
     ftp.chdir('pub/databases/msd/sifts/text')
     files = ftp.list('*.lst')
-    ftp.gettextfile('pdb_chain_go.lst', 'pdb_chain_go.lst')
+    ftp.gettextfile('pdb_chain_go.lst', './download/pdb_chain_go.lst')
     ftp.close
     print "was completed!\n"
 #=end
@@ -597,14 +597,14 @@ class RDFSIFTS
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
     biopax = RDF::Vocabulary.new("http://www.biopax.org/release/biopax-level3.owl#")
-    ut = RDF::Vocabulary.new("http://utprot.org/")
+    ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS GO』 
     #########################################################
     print "The transformation of RDF-SIFTS GO "
-    RDF::Writer.open("pdb_chain_go.nt") do |writer|
-      CSV.foreach('./pdb_chain_go.lst', headers:true, col_sep:'	') {|row|
+    RDF::Writer.open("./result/pdb_chain_go.nt") do |writer|
+      CSV.foreach('./download/pdb_chain_go.lst', headers:true, col_sep:'	') {|row|
         row0 = row[0].upcase # PDB
         row1 = row[1].upcase # CHAIN
         row2 = row[2].upcase # SP_PRIMARY
@@ -674,7 +674,7 @@ class RDFSIFTS
     ftp.passive = true
     ftp.chdir('pub/databases/msd/sifts/text')
     files = ftp.list('*.lst')
-    ftp.gettextfile('pdb_chain_pfam.lst', 'pdb_chain_pfam.lst')
+    ftp.gettextfile('pdb_chain_pfam.lst', './download/pdb_chain_pfam.lst')
     ftp.close
     print "was completed!\n"
 #=end
@@ -696,14 +696,14 @@ class RDFSIFTS
     upr = RDF::Vocabulary.new("http://www.uniprot.org/uniprot/")
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
-    ut = RDF::Vocabulary.new("http://utprot.org/")
+    ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS Pfam』 
     #########################################################
     print "The transformation of RDF-SIFTS Pfam "
-    RDF::Writer.open("pdb_chain_pfam.nt") do |writer|
-      CSV.foreach('./pdb_chain_pfam.lst', headers:true, col_sep:'	') {|row|
+    RDF::Writer.open("./result/pdb_chain_pfam.nt") do |writer|
+      CSV.foreach('./download/pdb_chain_pfam.lst', headers:true, col_sep:'	') {|row|
         row0 = row[0].upcase # PDB
         row1 = row[1].upcase # CHAIN
         row2 = row[2].upcase # SP_PRIMARY
@@ -757,7 +757,7 @@ class RDFSIFTS
     ftp.passive = true
     ftp.chdir('pub/databases/msd/sifts/text')
     files = ftp.list('*.lst')
-    ftp.gettextfile('pdb_chain_enzyme.lst', 'pdb_chain_enzyme.lst')
+    ftp.gettextfile('pdb_chain_enzyme.lst', './download/pdb_chain_enzyme.lst')
     ftp.close
     print "was completed!\n"
 #=end
@@ -780,14 +780,14 @@ class RDFSIFTS
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
     dbp = RDF::Vocabulary.new("http://dbpedia.org/resource/")
-    ut = RDF::Vocabulary.new("http://utprot.org/")
+    ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS Enzyme』 
     #########################################################
     print "The transformation of RDF-SIFTS Enzyme "
-    RDF::Writer.open("pdb_chain_enzyme.nt") do |writer|
-      CSV.foreach('./pdb_chain_enzyme.lst', headers:true, col_sep:'	') {|row|
+    RDF::Writer.open("./result/pdb_chain_enzyme.nt") do |writer|
+      CSV.foreach('./download/pdb_chain_enzyme.lst', headers:true, col_sep:'	') {|row|
         row0 = row[0].upcase # PDB
         row1 = row[1].upcase # CHAIN
         row2 = row[2].upcase # ACCESSION
@@ -852,13 +852,13 @@ class RDFSIFTS
     rdf = RDF::Vocabulary.new("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
     idorg = RDF::Vocabulary.new("http://info.identifiers.org/")
     dbp = RDF::Vocabulary.new("http://dbpedia.org/resource/")
-    ut = RDF::Vocabulary.new("http://utprot.org/")
+    ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS Asym』 
     #########################################################
     print "The transformation of RDF-SIFTS Asym "
-    RDF::Writer.open("./pdb_chain_labelasym.nt") do |writer|
+    RDF::Writer.open("./result/pdb_chain_labelasym.nt") do |writer|
       CSV.foreach('./data/pdb_chain_labelasym.list', headers:true, col_sep:'	') {|row|
         row0 = row[0].upcase # PDB
         row1 = row[1].upcase # AUTH_ASYM_ID (CHAIN)
