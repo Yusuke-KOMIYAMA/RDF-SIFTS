@@ -280,7 +280,7 @@ class RDFSIFTS
   #########################################################
   #    『RDF-SIFTS taxonomyGet』メソッド
   #########################################################
-#=begin
+=begin
     #########################################################
     #    FTPを用いてEBIから最新のSIFTSデータを取得
     #########################################################
@@ -293,7 +293,7 @@ class RDFSIFTS
     ftp.gettextfile('pdb_chain_taxonomy.lst', './download/pdb_chain_taxonomy.lst')
     ftp.close
     print "was completed!\n"
-#=end
+=end
   end
 
   def taxonomyConvert
@@ -316,8 +316,12 @@ class RDFSIFTS
     #   RDFのグラフモデルの組み立て 『RDF-SIFTS Taxonomy』 
     #########################################################
     print "The transformation of RDF-SIFTS Taxonomy "
+
+    file = File.open("./download/pdb_chain_taxonomy.lst","r").read.gsub('"','|')
+    File.open("./download/pdb_chain_taxonomy.lst2","w").write(file)
+
     RDF::Writer.open("./result//pdb_chain_taxonomy.nt") do |writer|
-      CSV.foreach('./download/pdb_chain_taxonomy.lst', headers:true, col_sep:'	') {|row|
+      CSV.foreach('./download/pdb_chain_taxonomy.lst2', headers:true, col_sep:'	') {|row|
         row0 = row[0].upcase # PDB
         row1 = row[1].upcase # CHAIN
         row2 = row[2].upcase # TAX_ID
@@ -909,6 +913,7 @@ opts.banner = "Usage: rdf-sifts-maker.rb [options]"
 opts.separator ""
 opts.separator "Specific options:"
 
+# Full download and covert
 opts.on("-f", "--full", "Download and convert to all RDF-SIFTS.") do |all|
   run = RDFSIFTS.new
   run.cathGet
@@ -931,6 +936,8 @@ opts.on("-f", "--full", "Download and convert to all RDF-SIFTS.") do |all|
   run.uniprotConvert
   run.asymConvert
 end
+
+# All convert
 opts.on("-r", "--run", "Convert only to all RDF-SIFTS.") do |all|
   run = RDFSIFTS.new
   run.cathConvert
@@ -944,6 +951,8 @@ opts.on("-r", "--run", "Convert only to all RDF-SIFTS.") do |all|
   run.uniprotConvert
   run.asymConvert
 end
+
+# All download
 opts.on("-d", "--download", "Download only to all RDF-SIFTS.") do |all|
   run = RDFSIFTS.new
   run.cathGet
@@ -956,55 +965,134 @@ opts.on("-d", "--download", "Download only to all RDF-SIFTS.") do |all|
   run.taxonomyGet
   run.uniprotGet
 end
+
+# Download and Convert about each file
 opts.on("-a", "--asym", "Convert to the RDF-SIFTS Asym.") do |cath|
   run = RDFSIFTS.new
   run.asymConvert
 end
-opts.on("-c", "--cath", "Convert to the RDF-SIFTS CATH.") do |cath|
+opts.on("-c", "--cath", "Download & convert and Convert to the RDF-SIFTS CATH.") do |cath|
   run = RDFSIFTS.new
   run.cathGet
   run.cathConvert
 end
-opts.on("-e", "--enzyme", "Convert to the RDF-SIFTS Enzyme.") do |enzyme|
+opts.on("-e", "--enzyme", "Download & convert to the RDF-SIFTS Enzyme.") do |enzyme|
   run = RDFSIFTS.new
   run.enzymeGet
   run.enzymeConvert
 end
-opts.on("-g", "--go", "Convert to the RDF-SIFTS GO.") do |go|
+opts.on("-g", "--go", "Download & convert to the RDF-SIFTS GO.") do |go|
   run = RDFSIFTS.new
   run.goGet
   run.goConvert
 end
-opts.on("-i", "--interpro", "Convert to the RDF-SIFTS InterPro.") do |interpro|
+opts.on("-i", "--interpro", "Download & convert to the RDF-SIFTS InterPro.") do |interpro|
   run = RDFSIFTS.new
   run.interproGet
   run.interproConvert
 end
-opts.on("-m", "--pubmed", "Convert to the RDF-SIFTS PubMed.") do |pubmed|
+opts.on("-m", "--pubmed", "Download & convert to the RDF-SIFTS PubMed.") do |pubmed|
   run = RDFSIFTS.new
   run.pubmedGet
   run.pubmedConvert
 end
-opts.on("-p", "--pfam", "Convert to the RDF-SIFTS Pfam.") do |pfam|
+opts.on("-p", "--pfam", "Download & convert to the RDF-SIFTS Pfam.") do |pfam|
   run = RDFSIFTS.new
   run.pfamGet
   run.pfamConvert 
 end
-opts.on("-s", "--scop", "Convert to the RDF-SIFTS SCOP.") do |scop|
+opts.on("-s", "--scop", "Download & convert to the RDF-SIFTS SCOP.") do |scop|
   run = RDFSIFTS.new
   run.scopGet
   run.scopConvert
 end
-opts.on("-t", "--taxonomy", "Convert to the RDF-SIFTS Taxonomy.") do |taxonomy|
+opts.on("-t", "--taxonomy", "Download & convert to the RDF-SIFTS Taxonomy.") do |taxonomy|
   run = RDFSIFTS.new
   run.taxonomyGet
   run.taxonomyConvert
 end
-opts.on("-u", "--uniprot", "Convert to the RDF-SIFTS UniProt.") do |uniprot|
+opts.on("-u", "--uniprot", "Download & convert to the RDF-SIFTS UniProt.") do |uniprot|
   run = RDFSIFTS.new
   run.uniprotGet
   run.uniprotConvert
 end
+
+# Download only about each file
+opts.on("--cath-download", "Download the SIFTS CATH from EBI.") do |cath1|
+  run = RDFSIFTS.new
+  run.cathGet
+end
+opts.on("--enzyme-download", "Download the SIFTS Enzyme from EBI.") do |enzyme1|
+  run = RDFSIFTS.new
+  run.enzymeGet
+end
+opts.on("--go-download", "Download the SIFTS GO from EBI.") do |go1|
+  run = RDFSIFTS.new
+  run.goGet
+end
+opts.on("--interpro-download", "Download the SIFTS InterPro from EBI.") do |interpro1|
+  run = RDFSIFTS.new
+  run.interproGet
+end
+opts.on("--pubmed-download", "Download the RDF-SIFTS PubMed from EBI.") do |pubmed1|
+  run = RDFSIFTS.new
+  run.pubmedGet
+end
+opts.on("--pfam-download", "Download the SIFTS Pfam from EBI.") do |pfam1|
+  run = RDFSIFTS.new
+  run.pfamGet
+end
+opts.on("--scop-download", "Download the SIFTS SCOP from EBI.") do |scop1|
+  run = RDFSIFTS.new
+  run.scopGet
+end
+opts.on("--taxonomy-download", "Download the SIFTS Taxonomy from EBI.") do |taxonomy1|
+  run = RDFSIFTS.new
+  run.taxonomyGet
+end
+opts.on("--uniprot-download", "Download the SIFTS UniProt from EBI.") do |uniprot1|
+  run = RDFSIFTS.new
+  run.uniprotGet
+end
+
+# Convert about each file
+opts.on("--cath-convert", "Convert to the RDF-SIFTS CATH.") do |cath2|
+  run = RDFSIFTS.new
+  run.cathConvert
+end
+opts.on("--enzyme-convert", "Convert to the RDF-SIFTS Enzyme.") do |enzyme2|
+  run = RDFSIFTS.new
+  run.enzymeConvert
+end
+opts.on("--go-convert", "Convert to the RDF-SIFTS GO.") do |go2|
+  run = RDFSIFTS.new
+  run.goConvert
+end
+opts.on("--interpro-convert", "Convert to the RDF-SIFTS InterPro.") do |interpro2|
+  run = RDFSIFTS.new
+  run.interproConvert
+end
+opts.on("--pubmed-convert", "Convert to the RDF-SIFTS PubMed.") do |pubmed2|
+  run = RDFSIFTS.new
+  run.pubmedConvert
+end
+opts.on("--pfam-convert", "Convert to the RDF-SIFTS Pfam.") do |pfam2|
+  run = RDFSIFTS.new
+  run.pfamConvert 
+end
+opts.on("--scop-convert", "Convert to the RDF-SIFTS SCOP.") do |scop2|
+  run = RDFSIFTS.new
+  run.scopConvert
+end
+opts.on("--taxonomy-convert", "Convert to the RDF-SIFTS Taxonomy.") do |taxonomy2|
+  run = RDFSIFTS.new
+  run.taxonomyConvert
+end
+opts.on("--uniprot-convert", "Convert to the RDF-SIFTS UniProt.") do |uniprot2|
+  run = RDFSIFTS.new
+  run.uniprotConvert
+end
+
 
 
 opts.separator ""
