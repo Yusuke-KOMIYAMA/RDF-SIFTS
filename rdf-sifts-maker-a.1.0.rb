@@ -280,7 +280,7 @@ class RDFSIFTS
   #########################################################
   #    『RDF-SIFTS taxonomyGet』メソッド
   #########################################################
-=begin
+#=begin
     #########################################################
     #    FTPを用いてEBIから最新のSIFTSデータを取得
     #########################################################
@@ -293,7 +293,7 @@ class RDFSIFTS
     ftp.gettextfile('pdb_chain_taxonomy.lst', './download/pdb_chain_taxonomy.lst')
     ftp.close
     print "was completed!\n"
-=end
+#=end
   end
 
   def taxonomyConvert
@@ -967,7 +967,7 @@ opts.on("-d", "--download", "Download all RDF-SIFTS from EBI.") do |all|
 end
 
 # Download and Convert about each file
-opts.on("-a", "--asym", "Convert to the RDF-SIFTS Asym.") do |cath|
+opts.on("-a", "--asym", "Convert to the RDF-SIFTS Asym.") do |asym|
   run = RDFSIFTS.new
   run.asymConvert
 end
