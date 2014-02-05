@@ -1,0 +1,3523 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.26.3 (20100126.1600)
+%%Title: dotfile
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+1 setmiterlimit
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 4864 1612
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 4828 1576 boxprim clip newpath
+1 1 set_scale 0 rotate 40 41 translate
+% http://info.identifiers.org/cath.domain/CATH_ID
+gsave
+[ /Rect [ 1596 934 1964 970 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://info.identifiers.org/cath.domain/CATH_ID) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 952 184.06 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1638.5 949.5 moveto 283 (http://info.identifiers.org/cath.domain/CATH_ID) alignedtext
+grestore
+% http://edamontology.org/data_1040
+gsave
+[ /Rect [ 2455 884 2719 920 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/data_1040) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 902 131.85 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2487.5 899.5 moveto 199 (http://edamontology.org/data_1040) alignedtext
+grestore
+% http://info.identifiers.org/cath.domain/CATH_ID->http://edamontology.org/data_1040
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1879.1 936.8 moveto
+1921.21 930.91 1970.9 924.7 2016 921 curveto
+2161.5 909.05 2328.43 904.56 2444.07 902.9 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2444.44 906.4 moveto
+2454.39 902.76 lineto
+2444.35 899.4 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2444.44 906.4 moveto
+2454.39 902.76 lineto
+2444.35 899.4 lineto
+closepath stroke
+[ /Rect [ 2016.5 921 2299.5 934 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 925 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% http://info.identifiers.org/ec-code/EC_NUMBER
+gsave
+[ /Rect [ 1604 418 1956 454 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://info.identifiers.org/ec-code/EC_NUMBER) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 436 176.17 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1644.5 433.5 moveto 271 (http://info.identifiers.org/ec-code/EC_NUMBER) alignedtext
+grestore
+% http://edamontology.org/data_1011
+gsave
+[ /Rect [ 2455 418 2719 454 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/data_1011) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 436 131.85 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2487.5 433.5 moveto 199 (http://edamontology.org/data_1011) alignedtext
+grestore
+% http://info.identifiers.org/ec-code/EC_NUMBER->http://edamontology.org/data_1011
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1956.6 436 moveto
+2102.89 436 2308.13 436 2444.2 436 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2444.28 439.5 moveto
+2454.28 436 lineto
+2444.28 432.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2444.28 439.5 moveto
+2454.28 436 lineto
+2444.28 432.5 lineto
+closepath stroke
+[ /Rect [ 2016.5 436 2299.5 449 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 440 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% http://info.identifiers.org/go/GO_ID
+gsave
+[ /Rect [ 1637 148 1923 184 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://info.identifiers.org/go/GO_ID) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 166 142.93 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1671.5 163.5 moveto 217 (http://info.identifiers.org/go/GO_ID) alignedtext
+grestore
+% http://edamontology.org/data_1176
+gsave
+[ /Rect [ 2455 148 2719 184 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/data_1176) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 166 131.85 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2487.5 163.5 moveto 199 (http://edamontology.org/data_1176) alignedtext
+grestore
+% http://info.identifiers.org/go/GO_ID->http://edamontology.org/data_1176
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1923.81 166 moveto
+2070.62 166 2297.17 166 2443.77 166 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2444.18 169.5 moveto
+2454.18 166 lineto
+2444.18 162.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2444.18 169.5 moveto
+2454.18 166 lineto
+2444.18 162.5 lineto
+closepath stroke
+[ /Rect [ 2016.5 166 2299.5 179 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 170 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% http://info.identifiers.org/interpro/INTERPRO_ID
+gsave
+[ /Rect [ 1592 364 1968 400 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://info.identifiers.org/interpro/INTERPRO_ID) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 382 187.75 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1635.5 379.5 moveto 289 (http://info.identifiers.org/interpro/INTERPRO_ID) alignedtext
+grestore
+% http://edamontology.org/data_1133
+gsave
+[ /Rect [ 2455 364 2719 400 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/data_1133) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 382 131.85 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2487.5 379.5 moveto 199 (http://edamontology.org/data_1133) alignedtext
+grestore
+% http://info.identifiers.org/interpro/INTERPRO_ID->http://edamontology.org/data_1133
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1968.19 382 moveto
+2113.56 382 2311.65 382 2444.17 382 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2444.39 385.5 moveto
+2454.39 382 lineto
+2444.39 378.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2444.39 385.5 moveto
+2454.39 382 lineto
+2444.39 378.5 lineto
+closepath stroke
+[ /Rect [ 2016.5 382 2299.5 395 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 386 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% http://info.identifiers.org/pfam/PFAM_ID
+gsave
+[ /Rect [ 1622 871 1938 907 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://info.identifiers.org/pfam/PFAM_ID) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 889 158.21 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1659.5 886.5 moveto 241 (http://info.identifiers.org/pfam/PFAM_ID) alignedtext
+grestore
+% http://edamontology.org/data_1138
+gsave
+[ /Rect [ 2455 830 2719 866 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/data_1138) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 848 131.85 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2487.5 845.5 moveto 199 (http://edamontology.org/data_1138) alignedtext
+grestore
+% http://info.identifiers.org/pfam/PFAM_ID->http://edamontology.org/data_1138
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1896.33 876.77 moveto
+1934.43 873.13 1976.99 869.47 2016 867 curveto
+2162.06 857.77 2329.43 852.87 2445.03 850.37 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2445.43 853.86 moveto
+2455.35 850.15 lineto
+2445.28 846.87 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2445.43 853.86 moveto
+2455.35 850.15 lineto
+2445.28 846.87 lineto
+closepath stroke
+[ /Rect [ 2016.5 867 2299.5 880 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 871 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% http://info.identifiers.org/pubmed/PUBMED_ID
+gsave
+[ /Rect [ 3888 85 4234 121 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://info.identifiers.org/pubmed/PUBMED_ID) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+4061 103 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+3928.5 100.5 moveto 265 (http://info.identifiers.org/pubmed/PUBMED_ID) alignedtext
+grestore
+% http://edamontology.org/data_1187
+gsave
+[ /Rect [ 4555 85 4819 121 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/data_1187) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+4687 103 131.85 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+4587.5 100.5 moveto 199 (http://edamontology.org/data_1187) alignedtext
+grestore
+% http://info.identifiers.org/pubmed/PUBMED_ID->http://edamontology.org/data_1187
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 4234.13 103 moveto
+4331.7 103 4452.11 103 4544.24 103 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 4544.48 106.5 moveto
+4554.48 103 lineto
+4544.48 99.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 4544.48 106.5 moveto
+4554.48 103 lineto
+4544.48 99.5 lineto
+closepath stroke
+[ /Rect [ 4252.5 103 4535.5 116 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+4252.5 107 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% http://info.identifiers.org/scop/SUNID
+gsave
+[ /Rect [ 1629 638 1931 674 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://info.identifiers.org/scop/SUNID) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 656 150.82 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1665.5 653.5 moveto 229 (http://info.identifiers.org/scop/SUNID) alignedtext
+grestore
+% http://edamontology.org/data_1042
+gsave
+[ /Rect [ 2455 638 2719 674 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/data_1042) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 656 131.85 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2487.5 653.5 moveto 199 (http://edamontology.org/data_1042) alignedtext
+grestore
+% http://info.identifiers.org/scop/SUNID->http://edamontology.org/data_1042
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1931.32 656 moveto
+2078.4 656 2300.09 656 2444.2 656 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2444.44 659.5 moveto
+2454.44 656 lineto
+2444.44 652.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2444.44 659.5 moveto
+2454.44 656 lineto
+2444.44 652.5 lineto
+closepath stroke
+[ /Rect [ 2016.5 656 2299.5 669 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 660 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% http://info.identifiers.org/taxonomy/TAX_ID
+gsave
+[ /Rect [ 1611 992 1949 1028 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://info.identifiers.org/taxonomy/TAX_ID) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 1010 168.79 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1650.5 1007.5 moveto 259 (http://info.identifiers.org/taxonomy/TAX_ID) alignedtext
+grestore
+% http://edamontology.org/data_1179
+gsave
+[ /Rect [ 2455 938 2719 974 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/data_1179) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 956 131.85 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2487.5 953.5 moveto 199 (http://edamontology.org/data_1179) alignedtext
+grestore
+% http://info.identifiers.org/taxonomy/TAX_ID->http://edamontology.org/data_1179
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1919.76 999.77 moveto
+1951.4 997.49 1984.85 995.13 2016 993 curveto
+2167.04 982.67 2340.61 971.52 2456.36 964.2 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2456.92 967.67 moveto
+2466.68 963.54 lineto
+2456.47 960.68 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2456.92 967.67 moveto
+2466.68 963.54 lineto
+2456.47 960.68 lineto
+closepath stroke
+[ /Rect [ 2016.5 993 2299.5 1006 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 997 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% Literal_1
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 2640 1028 moveto
+2534 1028 lineto
+2534 992 lineto
+2640 992 lineto
+closepath stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2541.5 1007.5 moveto 91 (SCIENTIFIC_NAME) alignedtext
+grestore
+% http://info.identifiers.org/taxonomy/TAX_ID->Literal_1
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1949.67 1010 moveto
+2128.23 1010 2400.08 1010 2522.86 1010 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2523.21 1013.5 moveto
+2533.21 1010 lineto
+2523.21 1006.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2523.21 1013.5 moveto
+2533.21 1010 lineto
+2523.21 1006.5 lineto
+closepath stroke
+[ /Rect [ 2031.5 1010 2284.5 1023 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/2000/01/rdf-schema#label) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2031.5 1014 moveto 253 (http://www.w3.org/2000/01/rdf-schema#label) alignedtext
+grestore
+% http://rdf.wwpdb.org/pdb/PDB/citation/primary
+gsave
+[ /Rect [ 3214 85 3566 121 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://rdf.wwpdb.org/pdb/PDB/citation/primary) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+3390 103 176.17 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+3254.5 100.5 moveto 271 (http://rdf.wwpdb.org/pdb/PDB/citation/primary) alignedtext
+grestore
+% http://rdf.wwpdb.org/pdb/PDB/citation/primary->http://info.identifiers.org/pubmed/PUBMED_ID
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 3566.74 103 moveto
+3662.55 103 3780.82 103 3877.64 103 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3877.84 106.5 moveto
+3887.84 103 lineto
+3877.84 99.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3877.84 106.5 moveto
+3887.84 103 lineto
+3877.84 99.5 lineto
+closepath stroke
+[ /Rect [ 3592.5 103 3869.5 116 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://semanticscience.org/resource/SIO_000628) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+3592.5 107 moveto 277 (http://semanticscience.org/resource/SIO_000628) alignedtext
+grestore
+% http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID
+gsave
+[ /Rect [ 744 10 1164 46 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+954 28 209.92 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+791.5 25.5 moveto 325 (http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID) alignedtext
+grestore
+% http://rdf.wwpdb.org/pdb/PDB
+gsave
+[ /Rect [ 1666 64 1894 100 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://rdf.wwpdb.org/pdb/PDB) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 82 113.88 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1695.5 79.5 moveto 169 (http://rdf.wwpdb.org/pdb/PDB) alignedtext
+grestore
+% http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID->http://rdf.wwpdb.org/pdb/PDB
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1153.24 33.74 moveto
+1267.69 37.88 1414.06 44.61 1544 55 curveto
+1589.48 58.64 1639.72 64.17 1682.12 69.29 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1681.81 72.78 moveto
+1692.16 70.51 lineto
+1682.66 65.83 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1681.81 72.78 moveto
+1692.16 70.51 lineto
+1682.66 65.83 lineto
+closepath stroke
+[ /Rect [ 1203.5 55 1522.5 68 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1203.5 59 moveto 319 (http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock) alignedtext
+grestore
+% http://rdf.wwpdb.org/schema/pdbx-v40.owl#struct_asym
+gsave
+[ /Rect [ 1578 0 1982 36 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://rdf.wwpdb.org/schema/pdbx-v40.owl#struct_asym) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 18 202.03 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1623.5 15.5 moveto 313 (http://rdf.wwpdb.org/schema/pdbx-v40.owl#struct_asym) alignedtext
+grestore
+% http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID->http://rdf.wwpdb.org/schema/pdbx-v40.owl#struct_asym
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1142.48 20 moveto
+1155.85 19.61 1169.13 19.26 1182 19 curveto
+1310.09 16.37 1453.64 16.04 1567.98 16.41 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1568.24 19.91 moveto
+1578.26 16.44 lineto
+1568.27 12.91 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1568.24 19.91 moveto
+1578.26 16.44 lineto
+1568.27 12.91 lineto
+closepath stroke
+[ /Rect [ 1221.5 19 1504.5 32 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 23 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenid042e79a06c7801316aeb406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2587 103 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2454.5 100.5 moveto 265 (genid:Ugenid042e79a06c7801316aeb406c8fb9222b) alignedtext
+grestore
+% http://rdf.wwpdb.org/pdb/PDB->genid:Ugenid042e79a06c7801316aeb406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1892.63 84.93 moveto
+2026.45 88.41 2251.34 94.27 2408.83 98.36 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2409.02 101.87 moveto
+2419.1 98.63 lineto
+2409.2 94.87 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2409.02 101.87 moveto
+2419.1 98.63 lineto
+2409.2 94.87 lineto
+closepath stroke
+[ /Rect [ 2052.5 96 2263.5 109 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://purl.org/dc/terms/identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2052.5 100 moveto 211 (http://purl.org/dc/terms/identifier) alignedtext
+grestore
+% http://edamontology.org/data_1127
+gsave
+[ /Rect [ 2455 31 2719 67 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/data_1127) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 49 131.85 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2487.5 46.5 moveto 199 (http://edamontology.org/data_1127) alignedtext
+grestore
+% http://rdf.wwpdb.org/pdb/PDB->http://edamontology.org/data_1127
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1890.16 77.28 moveto
+1929.83 75.6 1974.92 73.7 2016 72 curveto
+2164.06 65.88 2333.73 59.07 2449.39 54.46 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2449.86 57.95 moveto
+2459.71 54.05 lineto
+2449.58 50.95 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2449.86 57.95 moveto
+2459.71 54.05 lineto
+2449.58 50.95 lineto
+closepath stroke
+[ /Rect [ 2016.5 72 2299.5 85 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 76 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenid042e79a06c7801316aeb406c8fb9222b->http://rdf.wwpdb.org/pdb/PDB/citation/primary
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2760.25 103 moveto
+2890.67 103 3069.21 103 3202.89 103 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3203.25 106.5 moveto
+3213.25 103 lineto
+3203.24 99.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3203.25 106.5 moveto
+3213.25 103 lineto
+3203.24 99.5 lineto
+closepath stroke
+[ /Rect [ 2874.5 103 3187.5 116 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://rdf.wwpdb.org/schema/pdbx-v40.owl#citation.id) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2874.5 107 moveto 313 (http://rdf.wwpdb.org/schema/pdbx-v40.owl#citation.id) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID
+gsave
+[ /Rect [ 0 64 376 100 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+188 82 187.75 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+43.5 79.5 moveto 289 (http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID->http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 290.5 66.88 moveto
+323.48 62.47 360.23 58.02 394 55 curveto
+509.64 44.65 639.09 38.09 744.37 34.02 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 744.63 37.52 moveto
+754.49 33.64 lineto
+744.36 30.52 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 744.63 37.52 moveto
+754.49 33.64 lineto
+744.36 30.52 lineto
+closepath stroke
+[ /Rect [ 394.5 55 725.5 68 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://rdf.wwpdb.org/schema/pdbx-v40.owl#struct_asym.id) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+394.5 59 moveto 331 (http://rdf.wwpdb.org/schema/pdbx-v40.owl#struct_asym.id) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID->http://rdf.wwpdb.org/pdb/PDB
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 376.09 82 moveto
+705.45 82 1377.97 82 1655.73 82 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1655.85 85.5 moveto
+1665.85 82 lineto
+1655.85 78.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1655.85 85.5 moveto
+1665.85 82 lineto
+1655.85 78.5 lineto
+closepath stroke
+[ /Rect [ 794.5 82 1113.5 95 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+794.5 86 moveto 319 (http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock) alignedtext
+grestore
+% http://edamontology.org/data_1008
+gsave
+[ /Rect [ 822 113 1086 149 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/data_1008) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+954 131 131.85 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+854.5 128.5 moveto 199 (http://edamontology.org/data_1008) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID->http://edamontology.org/data_1008
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 344.4 92 moveto
+485.66 101.04 691.15 114.19 823.7 122.67 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 823.71 126.17 moveto
+833.91 123.32 lineto
+824.16 119.19 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 823.71 126.17 moveto
+833.91 123.32 lineto
+824.16 119.19 lineto
+closepath stroke
+[ /Rect [ 418.5 116 701.5 129 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+418.5 120 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/CHAIN
+gsave
+[ /Rect [ 26 604 350 640 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://utprot.net/pdb/PDB/auth_asym/CHAIN) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+188 622 161.9 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+64.5 619.5 moveto 247 (http://utprot.net/pdb/PDB/auth_asym/CHAIN) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/CHAIN->http://rdf.wwpdb.org/pdb/PDB
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 200.86 603.96 moveto
+230.47 563.63 307.59 465.4 394 410 curveto
+613.5 269.27 1411.96 137.81 1686.52 95.85 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1687.1 99.31 moveto
+1696.46 94.34 lineto
+1686.04 92.39 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1687.1 99.31 moveto
+1696.46 94.34 lineto
+1686.04 92.39 lineto
+closepath stroke
+[ /Rect [ 794.5 278 1113.5 291 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+794.5 282 moveto 319 (http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/CHAIN->http://edamontology.org/data_1008
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 189.58 603.55 moveto
+196.87 531.49 234.03 267.58 394 158 curveto
+411.07 146.31 652.46 138.24 812.69 134.14 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 813.22 137.62 moveto
+823.13 133.87 lineto
+813.04 130.63 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 813.22 137.62 moveto
+823.13 133.87 lineto
+813.04 130.63 lineto
+closepath stroke
+[ /Rect [ 418.5 158 701.5 171 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+418.5 162 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenid14359f006b1b01316ae8406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+954 902 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+821.5 899.5 moveto 265 (genid:Ugenid14359f006b1b01316ae8406c8fb9222b) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/CHAIN->genid:Ugenid14359f006b1b01316ae8406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 201.33 640.17 moveto
+231.04 679.15 306.94 770.66 394 813 curveto
+511.52 870.15 657.73 891.96 771.28 899.72 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 771.27 903.22 moveto
+781.47 900.38 lineto
+771.72 896.24 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 771.27 903.22 moveto
+781.47 900.38 lineto
+771.72 896.24 lineto
+closepath stroke
+[ /Rect [ 454.5 895 665.5 908 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://purl.org/dc/terms/identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+454.5 899 moveto 211 (http://purl.org/dc/terms/identifier) alignedtext
+grestore
+% genid:Ugenid44740a30707f0131e7ed406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+954 650 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+821.5 647.5 moveto 265 (genid:Ugenid44740a30707f0131e7ed406c8fb9222b) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/CHAIN->genid:Ugenid44740a30707f0131e7ed406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 342.09 627.63 moveto
+468.87 632.27 648.51 638.83 780.36 643.65 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 780.44 647.16 moveto
+790.56 644.03 lineto
+780.7 640.16 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 780.44 647.16 moveto
+790.56 644.03 lineto
+780.7 640.16 lineto
+closepath stroke
+[ /Rect [ 454.5 640 665.5 653 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://purl.org/dc/terms/identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+454.5 644 moveto 211 (http://purl.org/dc/terms/identifier) alignedtext
+grestore
+% genid:Ugenid8b688ea06a8501316acf406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+954 542 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+821.5 539.5 moveto 265 (genid:Ugenid8b688ea06a8501316acf406c8fb9222b) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/CHAIN->genid:Ugenid8b688ea06a8501316acf406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 262.04 605.87 moveto
+301.12 597.89 349.97 588.76 394 583 curveto
+524.17 565.97 672.36 555.51 783.59 549.42 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 784.1 552.9 moveto
+793.89 548.87 lineto
+783.72 545.91 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 784.1 552.9 moveto
+793.89 548.87 lineto
+783.72 545.91 lineto
+closepath stroke
+[ /Rect [ 454.5 583 665.5 596 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://purl.org/dc/terms/identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+454.5 587 moveto 211 (http://purl.org/dc/terms/identifier) alignedtext
+grestore
+% genid:Ugenidb926a1d0698201316acf406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+954 326 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+821.5 323.5 moveto 265 (genid:Ugenidb926a1d0698201316acf406c8fb9222b) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/CHAIN->genid:Ugenidb926a1d0698201316acf406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 228.86 604.42 moveto
+270.29 586.72 336.35 558.83 394 536 curveto
+576.36 463.77 794.52 383.79 896.34 346.83 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 897.62 350.09 moveto
+905.83 343.39 lineto
+895.24 343.51 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 897.62 350.09 moveto
+905.83 343.39 lineto
+895.24 343.51 lineto
+closepath stroke
+[ /Rect [ 454.5 536 665.5 549 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://purl.org/dc/terms/identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+454.5 540 moveto 211 (http://purl.org/dc/terms/identifier) alignedtext
+grestore
+% genid:Ugeniddda6df80697d01316acf406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+954 596 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+821.5 593.5 moveto 265 (genid:Ugeniddda6df80697d01316acf406c8fb9222b) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/CHAIN->genid:Ugeniddda6df80697d01316acf406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 329.26 613.15 moveto
+350.93 611.97 373.06 610.87 394 610 curveto
+520.5 604.74 663.16 601.21 772.83 599.01 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 773.08 602.5 moveto
+783.01 598.8 lineto
+772.94 595.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 773.08 602.5 moveto
+783.01 598.8 lineto
+772.94 595.5 lineto
+closepath stroke
+[ /Rect [ 454.5 610 665.5 623 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://purl.org/dc/terms/identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+454.5 614 moveto 211 (http://purl.org/dc/terms/identifier) alignedtext
+grestore
+% genid:Ugenidf91d1850697c01316acf406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+954 821 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+821.5 818.5 moveto 265 (genid:Ugenidf91d1850697c01316acf406c8fb9222b) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/CHAIN->genid:Ugenidf91d1850697c01316acf406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 217.21 639.86 moveto
+256.14 662.84 327.8 702.38 394 724 curveto
+532.85 769.34 698.37 794.68 813.29 807.99 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 813.22 811.5 moveto
+823.55 809.16 lineto
+814.01 804.55 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 813.22 811.5 moveto
+823.55 809.16 lineto
+814.01 804.55 lineto
+closepath stroke
+[ /Rect [ 454.5 796 665.5 809 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://purl.org/dc/terms/identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+454.5 800 moveto 211 (http://purl.org/dc/terms/identifier) alignedtext
+grestore
+% genid:Ugenidfa1865c06a8801316acf406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+954 744 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+821.5 741.5 moveto 265 (genid:Ugenidfa1865c06a8801316acf406c8fb9222b) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/CHAIN->genid:Ugenidfa1865c06a8801316acf406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 275.66 637.18 moveto
+312.23 643.43 355.15 650.68 394 657 curveto
+550.96 682.52 732.94 710.5 845.78 727.65 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 845.4 731.13 moveto
+855.81 729.18 lineto
+846.45 724.21 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 845.4 731.13 moveto
+855.81 729.18 lineto
+846.45 724.21 lineto
+closepath stroke
+[ /Rect [ 454.5 707 665.5 720 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://purl.org/dc/terms/identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+454.5 711 moveto 211 (http://purl.org/dc/terms/identifier) alignedtext
+grestore
+% genid:Ugenidffa55f806ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+954 1100 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+821.5 1097.5 moveto 265 (genid:Ugenidffa55f806ba701316ae9406c8fb9222b) alignedtext
+grestore
+% http://utprot.net/pdb/PDB/auth_asym/CHAIN->genid:Ugenidffa55f806ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 195.97 640.32 moveto
+218.98 691.15 290.61 835.26 394 912 curveto
+529.36 1012.47 721.78 1061.43 842.17 1083.6 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 841.69 1087.07 moveto
+852.15 1085.41 lineto
+842.93 1080.18 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 841.69 1087.07 moveto
+852.15 1085.41 lineto
+842.93 1080.18 lineto
+closepath stroke
+[ /Rect [ 454.5 1057 665.5 1070 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://purl.org/dc/terms/identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+454.5 1061 moveto 211 (http://purl.org/dc/terms/identifier) alignedtext
+grestore
+% genid:Ugenid14359f006b1b01316ae8406c8fb9222b->http://info.identifiers.org/taxonomy/TAX_ID
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 990.03 919.79 moveto
+1034.09 940.54 1111.5 973.8 1182 988 curveto
+1259.03 1003.51 1453.84 1008.37 1600.33 1009.76 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1600.31 1013.26 moveto
+1610.35 1009.85 lineto
+1600.38 1006.26 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1600.31 1013.26 moveto
+1610.35 1009.85 lineto
+1600.38 1006.26 lineto
+closepath stroke
+[ /Rect [ 1248.5 1008 1477.5 1021 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 1012 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% http://edamontology.org/data_0954
+gsave
+[ /Rect [ 1648 695 1912 731 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/data_0954) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 713 131.85 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1680.5 710.5 moveto 199 (http://edamontology.org/data_0954) alignedtext
+grestore
+% genid:Ugenid14359f006b1b01316ae8406c8fb9222b->http://edamontology.org/data_0954
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1121.32 897.38 moveto
+1290.15 891.95 1528.2 881.9 1544 868 curveto
+1576.59 839.33 1532.54 803.88 1562 772 curveto
+1585.25 746.84 1618.02 731.98 1651.11 723.32 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1652.02 726.7 moveto
+1660.91 720.93 lineto
+1650.37 719.9 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1652.02 726.7 moveto
+1660.91 720.93 lineto
+1650.37 719.9 lineto
+closepath stroke
+[ /Rect [ 1221.5 895 1504.5 908 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 899 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenid44740a30707f0131e7ed406c8fb9222b->http://info.identifiers.org/scop/SUNID
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1126.98 649.41 moveto
+1244.57 649.22 1403.68 649.39 1544 651 curveto
+1569.05 651.29 1595.6 651.72 1621.5 652.22 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1621.7 655.72 moveto
+1631.77 652.42 lineto
+1621.84 648.72 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1621.7 655.72 moveto
+1631.77 652.42 lineto
+1621.84 648.72 lineto
+closepath stroke
+[ /Rect [ 1248.5 651 1477.5 664 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 655 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% http://www.uniprot.org/uniprot/SP_PRIMARY
+gsave
+[ /Rect [ 1618 781 1942 817 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.uniprot.org/uniprot/SP_PRIMARY) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 799 161.9 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1656.5 796.5 moveto 247 (http://www.uniprot.org/uniprot/SP_PRIMARY) alignedtext
+grestore
+% genid:Ugenid44740a30707f0131e7ed406c8fb9222b->http://www.uniprot.org/uniprot/SP_PRIMARY
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1035.65 665.9 moveto
+1076.33 676.27 1125.03 692.53 1164 717 curveto
+1173.85 723.19 1171.44 731.13 1182 736 curveto
+1255.14 769.76 1464.01 745.49 1544 755 curveto
+1595.27 761.1 1652.18 771.6 1697.27 780.81 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1696.79 784.29 moveto
+1707.29 782.88 lineto
+1698.21 777.43 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1696.79 784.29 moveto
+1707.29 782.88 lineto
+1698.21 777.43 lineto
+closepath stroke
+[ /Rect [ 1248.5 755 1477.5 768 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 759 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% genid:Ugenid44740a30707f0131e7ed406c8fb9222b->http://edamontology.org/data_0954
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1093.65 660.65 moveto
+1250.6 672.62 1503.12 691.88 1654.17 703.4 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1654.18 706.91 moveto
+1664.42 704.18 lineto
+1654.71 699.93 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1654.18 706.91 moveto
+1664.42 704.18 lineto
+1654.71 699.93 lineto
+closepath stroke
+[ /Rect [ 1221.5 694 1504.5 707 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 698 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenid447efa40707f0131e7ed406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1780 548 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1647.5 545.5 moveto 265 (genid:Ugenid447efa40707f0131e7ed406c8fb9222b) alignedtext
+grestore
+% genid:Ugenid44740a30707f0131e7ed406c8fb9222b->genid:Ugenid447efa40707f0131e7ed406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1121.4 645.3 moveto
+1136.72 640.04 1151.25 632.8 1164 623 curveto
+1180.75 610.13 1164.77 591.23 1182 579 curveto
+1190.7 572.83 1434.22 561.82 1607.78 554.72 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1607.95 558.22 moveto
+1617.8 554.31 lineto
+1607.67 551.22 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1607.95 558.22 moveto
+1617.8 554.31 lineto
+1607.67 551.22 lineto
+closepath stroke
+[ /Rect [ 1248.5 579 1477.5 592 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 583 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% genid:Ugenid8b688ea06a8501316acf406c8fb9222b->http://info.identifiers.org/interpro/INTERPRO_ID
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 969.05 523.9 moveto
+1002.51 485.28 1087.59 395.63 1182 363 curveto
+1265.19 334.24 1500.33 351.89 1649.76 367.1 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1649.62 370.61 moveto
+1659.93 368.15 lineto
+1650.34 363.64 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1649.62 370.61 moveto
+1659.93 368.15 lineto
+1650.34 363.64 lineto
+closepath stroke
+[ /Rect [ 1248.5 363 1477.5 376 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 367 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% genid:Ugenid8b688ea06a8501316acf406c8fb9222b->http://edamontology.org/data_0954
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1096.88 531.79 moveto
+1260.79 521.58 1511.28 511.14 1544 540 curveto
+1592.04 582.37 1516.97 637.44 1562 683 curveto
+1588.63 709.94 1627.33 720.51 1664.75 723.35 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1664.56 726.85 moveto
+1674.75 723.94 lineto
+1664.97 719.86 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1664.56 726.85 moveto
+1674.75 723.94 lineto
+1664.97 719.86 lineto
+closepath stroke
+[ /Rect [ 1221.5 540 1504.5 553 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 544 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenidb926a1d0698201316acf406c8fb9222b->http://info.identifiers.org/go/GO_ID
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 982.9 308.06 moveto
+1024.92 283.01 1106.19 238.45 1182 219 curveto
+1338.16 178.94 1383.84 214.39 1544 196 curveto
+1552.06 195.08 1553.97 194.17 1562 193 curveto
+1595.09 188.2 1631.09 183.51 1664.12 179.44 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1664.77 182.88 moveto
+1674.27 178.19 lineto
+1663.91 175.94 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1664.77 182.88 moveto
+1674.27 178.19 lineto
+1663.91 175.94 lineto
+closepath stroke
+[ /Rect [ 1248.5 219 1477.5 232 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 223 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% genid:Ugenidb926a1d0698201316acf406c8fb9222b->http://www.uniprot.org/uniprot/SP_PRIMARY
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 978.78 343.93 moveto
+1019.07 371.96 1102.34 425.32 1182 448 curveto
+1220.76 459.04 1515.45 442.55 1544 471 curveto
+1586.43 513.29 1524.02 693.67 1562 740 curveto
+1580.45 762.51 1606.54 776.93 1634.28 786.05 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1633.57 789.5 moveto
+1644.15 789.07 lineto
+1635.61 782.8 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1633.57 789.5 moveto
+1644.15 789.07 lineto
+1635.61 782.8 lineto
+closepath stroke
+[ /Rect [ 1248.5 471 1477.5 484 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 475 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% genid:Ugenidb926a1d0698201316acf406c8fb9222b->http://edamontology.org/data_0954
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1017.89 342.8 moveto
+1063.34 354.06 1126.01 368.21 1182 376 curveto
+1221.91 381.55 1515.47 369.54 1544 398 curveto
+1588.93 442.82 1518.81 636.51 1562 683 curveto
+1589.45 712.55 1631.32 722.83 1671.06 724.71 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1671.01 728.21 moveto
+1681.11 725.01 lineto
+1671.22 721.21 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1671.01 728.21 moveto
+1681.11 725.01 lineto
+1671.22 721.21 lineto
+closepath stroke
+[ /Rect [ 1221.5 398 1504.5 411 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 402 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenidb939f8b0698201316acf406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1780 220 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1647.5 217.5 moveto 265 (genid:Ugenidb939f8b0698201316acf406c8fb9222b) alignedtext
+grestore
+% genid:Ugenidb926a1d0698201316acf406c8fb9222b->genid:Ugenidb939f8b0698201316acf406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1012.53 308.93 moveto
+1058.27 296.24 1123.67 279.54 1182 270 curveto
+1263.85 256.61 1475.2 240.54 1623.31 230.3 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1623.68 233.78 moveto
+1633.41 229.6 lineto
+1623.2 226.79 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1623.68 233.78 moveto
+1633.41 229.6 lineto
+1623.2 226.79 lineto
+closepath stroke
+[ /Rect [ 1182.5 270 1543.5 283 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.biopax.org/release/biopax-level3.owl#evidenceCode) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1182.5 274 moveto 361 (http://www.biopax.org/release/biopax-level3.owl#evidenceCode) alignedtext
+grestore
+% http://www.biopax.org/release/biopax-level3.owl#Evidence
+gsave
+[ /Rect [ 1563 310 1997 346 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.biopax.org/release/biopax-level3.owl#Evidence) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 328 216.8 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1611.5 325.5 moveto 337 (http://www.biopax.org/release/biopax-level3.owl#Evidence) alignedtext
+grestore
+% genid:Ugenidb926a1d0698201316acf406c8fb9222b->http://www.biopax.org/release/biopax-level3.owl#Evidence
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1127.29 326.18 moveto
+1244.86 326.33 1403.8 326.58 1544 327 curveto
+1546.78 327.01 1549.59 327.02 1552.41 327.03 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1552.66 330.53 moveto
+1562.68 327.06 lineto
+1552.69 323.53 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1552.66 330.53 moveto
+1562.68 327.06 lineto
+1552.69 323.53 lineto
+closepath stroke
+[ /Rect [ 1221.5 327 1504.5 340 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 331 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% Literal_3
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 1821 292 moveto
+1739 292 lineto
+1739 256 lineto
+1821 256 lineto
+closepath stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1746.5 271.5 moveto 67 (WITH_STRING) alignedtext
+grestore
+% genid:Ugenidb926a1d0698201316acf406c8fb9222b->Literal_3
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1093.24 315.26 moveto
+1122.55 313.1 1153.29 310.91 1182 309 curveto
+1383.9 295.57 1624.33 282.33 1728.1 276.76 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1728.5 280.24 moveto
+1738.3 276.21 lineto
+1728.13 273.25 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1728.5 280.24 moveto
+1738.3 276.21 lineto
+1728.13 273.25 lineto
+closepath stroke
+[ /Rect [ 1230.5 309 1495.5 322 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/2000/01/rdf-schema#comment) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1230.5 313 moveto 265 (http://www.w3.org/2000/01/rdf-schema#comment) alignedtext
+grestore
+% genid:Ugeniddda6df80697d01316acf406c8fb9222b->http://info.identifiers.org/ec-code/EC_NUMBER
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1125.95 593.76 moveto
+1140.04 587.93 1153.05 579.89 1164 569 curveto
+1206.61 526.63 1136.77 474.56 1182 435 curveto
+1214.51 406.57 1457.39 415.52 1623.43 425.27 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1623.57 428.78 moveto
+1633.76 425.88 lineto
+1623.99 421.79 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1623.57 428.78 moveto
+1633.76 425.88 lineto
+1623.99 421.79 lineto
+closepath stroke
+[ /Rect [ 1248.5 435 1477.5 448 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 439 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% http://www.uniprot.org/uniprot/ACCESSION
+gsave
+[ /Rect [ 1622 584 1938 620 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.uniprot.org/uniprot/ACCESSION) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+1780 602 158.21 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1659.5 599.5 moveto 241 (http://www.uniprot.org/uniprot/ACCESSION) alignedtext
+grestore
+% genid:Ugeniddda6df80697d01316acf406c8fb9222b->http://www.uniprot.org/uniprot/ACCESSION
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1123.54 592.28 moveto
+1138.26 586.78 1152.06 579.22 1164 569 curveto
+1185.8 550.34 1159.06 524.23 1182 507 curveto
+1214.16 482.85 1512.13 482.47 1544 507 curveto
+1568.77 526.07 1538.45 554.44 1562 575 curveto
+1577.56 588.58 1596.28 597.62 1616.14 603.44 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1615.41 606.86 moveto
+1625.97 606.04 lineto
+1617.2 600.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1615.41 606.86 moveto
+1625.97 606.04 lineto
+1617.2 600.1 lineto
+closepath stroke
+[ /Rect [ 1248.5 507 1477.5 520 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 511 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% genid:Ugeniddda6df80697d01316acf406c8fb9222b->http://edamontology.org/data_0954
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1126.85 596.96 moveto
+1288.95 599.4 1511.23 607.28 1544 632 curveto
+1563.19 646.47 1543.37 667.81 1562 683 curveto
+1585.01 701.76 1614.14 711.9 1643.55 716.92 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1643.12 720.39 moveto
+1653.53 718.43 lineto
+1644.17 713.47 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1643.12 720.39 moveto
+1653.53 718.43 lineto
+1644.17 713.47 lineto
+closepath stroke
+[ /Rect [ 1221.5 632 1504.5 645 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 636 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenidf91d1850697c01316acf406c8fb9222b->http://info.identifiers.org/cath.domain/CATH_ID
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1087.34 832.49 moveto
+1115.78 840.71 1143.4 853.94 1164 875 curveto
+1188.58 900.12 1154.47 930.16 1182 952 curveto
+1215.24 978.36 1449.82 971.06 1615.08 962.34 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1615.57 965.82 moveto
+1625.36 961.79 lineto
+1615.19 958.83 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1615.57 965.82 moveto
+1625.36 961.79 lineto
+1615.19 958.83 lineto
+closepath stroke
+[ /Rect [ 1248.5 970 1477.5 983 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 974 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% genid:Ugenidf91d1850697c01316acf406c8fb9222b->http://www.uniprot.org/uniprot/SP_PRIMARY
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1068.73 834.48 moveto
+1187.81 846.36 1379.31 859.56 1544 844 curveto
+1597.39 838.96 1656.67 827.63 1702.47 817.6 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1703.32 821 moveto
+1712.33 815.42 lineto
+1701.81 814.16 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1703.32 821 moveto
+1712.33 815.42 lineto
+1701.81 814.16 lineto
+closepath stroke
+[ /Rect [ 1248.5 851 1477.5 864 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 855 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% genid:Ugenidf91d1850697c01316acf406c8fb9222b->http://edamontology.org/data_0954
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1053.13 806.24 moveto
+1093.09 800.74 1139.66 794.89 1182 791 curveto
+1342.43 776.26 1384.67 795.87 1544 772 curveto
+1603.27 763.12 1669.35 745.96 1716.47 732.42 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1717.6 735.74 moveto
+1726.23 729.59 lineto
+1715.65 729.01 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1717.6 735.74 moveto
+1726.23 729.59 lineto
+1715.65 729.01 lineto
+closepath stroke
+[ /Rect [ 1221.5 791 1504.5 804 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 795 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenidfa1865c06a8801316acf406c8fb9222b->http://info.identifiers.org/pfam/PFAM_ID
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1097.14 754.11 moveto
+1122.37 762.07 1146.21 774.59 1164 794 curveto
+1201.03 834.41 1140.51 880.18 1182 916 curveto
+1212.45 942.28 1503.84 918.29 1544 916 curveto
+1585.28 913.65 1630.42 909 1670.07 904.21 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1670.52 907.68 moveto
+1680.02 902.99 lineto
+1669.67 900.73 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1670.52 907.68 moveto
+1680.02 902.99 lineto
+1669.67 900.73 lineto
+closepath stroke
+[ /Rect [ 1248.5 928 1477.5 941 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 932 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% genid:Ugenidfa1865c06a8801316acf406c8fb9222b->http://www.uniprot.org/uniprot/SP_PRIMARY
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1053.93 758.73 moveto
+1089.79 766.33 1129.79 777.58 1164 794 curveto
+1173.14 798.38 1172.41 804.71 1182 808 curveto
+1258.09 834.11 1463.57 809.53 1544 808 curveto
+1568.34 807.54 1594.08 806.8 1619.27 805.95 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1619.39 809.45 moveto
+1629.26 805.61 lineto
+1619.15 802.45 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1619.39 809.45 moveto
+1629.26 805.61 lineto
+1619.15 802.45 lineto
+closepath stroke
+[ /Rect [ 1248.5 819 1477.5 832 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 823 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% genid:Ugenidfa1865c06a8801316acf406c8fb9222b->http://edamontology.org/data_0954
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1075.16 731.14 moveto
+1109.64 727.94 1147.27 724.89 1182 723 curveto
+1337.55 714.55 1516.17 712.57 1637.4 712.38 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1637.49 715.88 moveto
+1647.48 712.37 lineto
+1637.48 708.88 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1637.49 715.88 moveto
+1647.48 712.37 lineto
+1637.48 708.88 lineto
+closepath stroke
+[ /Rect [ 1221.5 723 1504.5 736 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 727 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenidffa55f806ba701316ae9406c8fb9222b->http://www.uniprot.org/uniprot/SP_PRIMARY
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1109.04 1091.93 moveto
+1281.23 1082.61 1536.24 1067.58 1544 1060 curveto
+1575.6 1029.12 1533.87 896.07 1562 862 curveto
+1582.14 837.6 1611.1 822.31 1641.36 812.81 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1642.6 816.1 moveto
+1651.22 809.93 lineto
+1640.64 809.38 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1642.6 816.1 moveto
+1651.22 809.93 lineto
+1640.64 809.38 lineto
+closepath stroke
+[ /Rect [ 1248.5 1087 1477.5 1100 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/has_identifier) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1248.5 1091 moveto 229 (http://edamontology.org/has_identifier) alignedtext
+grestore
+% genid:Ugenidffa55f806ba701316ae9406c8fb9222b->http://edamontology.org/data_0954
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1009.61 1082.9 moveto
+1055.41 1069.6 1122.28 1051.95 1182 1043 curveto
+1221.83 1037.03 1515.25 1052.21 1544 1024 curveto
+1584.07 984.68 1526.31 815.34 1562 772 curveto
+1583.29 746.15 1614.64 730.98 1646.97 722.24 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1648.17 725.55 moveto
+1657.02 719.73 lineto
+1646.47 718.76 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1648.17 725.55 moveto
+1657.02 719.73 lineto
+1646.47 718.76 lineto
+closepath stroke
+[ /Rect [ 1221.5 1043 1504.5 1056 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 1047 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenidffac64906ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1780 1118 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1647.5 1115.5 moveto 265 (genid:Ugenidffac64906ba701316ae9406c8fb9222b) alignedtext
+grestore
+% genid:Ugenidffa55f806ba701316ae9406c8fb9222b->genid:Ugenidffac64906ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1123.4 1103.69 moveto
+1262.39 1106.72 1458.66 1111 1600.37 1114.09 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1600.4 1117.59 moveto
+1610.47 1114.31 lineto
+1600.55 1110.59 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1600.4 1117.59 moveto
+1610.47 1114.31 lineto
+1600.55 1110.59 lineto
+closepath stroke
+[ /Rect [ 1221.5 1112 1504.5 1125 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://biohackathon.org/resource/faldo#location) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 1116 moveto 283 (http://biohackathon.org/resource/faldo#location) alignedtext
+grestore
+% genid:Ugenidffb18ee06ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1780 1442 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1647.5 1439.5 moveto 265 (genid:Ugenidffb18ee06ba701316ae9406c8fb9222b) alignedtext
+grestore
+% genid:Ugenidffa55f806ba701316ae9406c8fb9222b->genid:Ugenidffb18ee06ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 981.21 1117.82 moveto
+1023.11 1144.75 1106.49 1196.34 1182 1231 curveto
+1367.5 1316.16 1597.97 1388.64 1710.98 1422.14 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1710.3 1425.59 moveto
+1720.88 1425.07 lineto
+1712.28 1418.88 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1710.3 1425.59 moveto
+1720.88 1425.07 lineto
+1712.28 1418.88 lineto
+closepath stroke
+[ /Rect [ 1221.5 1366 1504.5 1379 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://biohackathon.org/resource/faldo#location) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 1370 moveto 283 (http://biohackathon.org/resource/faldo#location) alignedtext
+grestore
+% genid:Ugenidffb1a2906ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1780 1262 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+1647.5 1259.5 moveto 265 (genid:Ugenidffb1a2906ba701316ae9406c8fb9222b) alignedtext
+grestore
+% genid:Ugenidffa55f806ba701316ae9406c8fb9222b->genid:Ugenidffb1a2906ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1035.08 1115.9 moveto
+1189.86 1146.26 1526.43 1212.27 1688.79 1244.11 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 1688.27 1247.58 moveto
+1698.75 1246.07 lineto
+1689.61 1240.71 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 1688.27 1247.58 moveto
+1698.75 1246.07 lineto
+1689.61 1240.71 lineto
+closepath stroke
+[ /Rect [ 1221.5 1214 1504.5 1227 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://biohackathon.org/resource/faldo#location) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+1221.5 1218 moveto 283 (http://biohackathon.org/resource/faldo#location) alignedtext
+grestore
+% http://purl.uniprot.org/core/Protein
+gsave
+[ /Rect [ 2444 584 2730 620 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://purl.uniprot.org/core/Protein) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 602 142.93 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2478.5 599.5 moveto 217 (http://purl.uniprot.org/core/Protein) alignedtext
+grestore
+% http://www.uniprot.org/uniprot/ACCESSION->http://purl.uniprot.org/core/Protein
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1938.47 602 moveto
+2081.81 602 2291.53 602 2433.35 602 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2433.44 605.5 moveto
+2443.44 602 lineto
+2433.44 598.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2433.44 605.5 moveto
+2443.44 602 lineto
+2433.44 598.5 lineto
+closepath stroke
+[ /Rect [ 2016.5 602 2299.5 615 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 606 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% http://www.uniprot.org/uniprot/SP_PRIMARY->http://purl.uniprot.org/core/Protein
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1941.3 797.18 moveto
+2053.81 787.78 2200.95 758.16 2300 673 curveto
+2316.02 659.23 2301.07 641.64 2318 629 curveto
+2363.76 594.84 2426.78 587.05 2480.32 588.28 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2480.43 591.79 moveto
+2490.54 588.63 lineto
+2480.67 584.79 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2480.43 591.79 moveto
+2490.54 588.63 lineto
+2480.67 584.79 lineto
+closepath stroke
+[ /Rect [ 2016.5 786 2299.5 799 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 790 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% http://edamontology.org/data_1039
+gsave
+[ /Rect [ 2455 530 2719 566 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/data_1039) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 548 131.85 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2487.5 545.5 moveto 199 (http://edamontology.org/data_1039) alignedtext
+grestore
+% genid:Ugenid447efa40707f0131e7ed406c8fb9222b->http://edamontology.org/data_1039
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1953.12 548 moveto
+2099.63 548 2307.07 548 2444.22 548 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2444.38 551.5 moveto
+2454.38 548 lineto
+2444.38 544.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2444.38 551.5 moveto
+2454.38 548 lineto
+2444.38 544.5 lineto
+closepath stroke
+[ /Rect [ 2016.5 548 2299.5 561 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 552 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% Literal_2
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 2616 512 moveto
+2558 512 lineto
+2558 476 lineto
+2616 476 lineto
+closepath stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2565.5 491.5 moveto 43 (SCOP_ID) alignedtext
+grestore
+% genid:Ugenid447efa40707f0131e7ed406c8fb9222b->Literal_2
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1921.63 537.63 moveto
+1952.72 535.4 1985.47 533.09 2016 531 curveto
+2215.45 517.35 2454.18 502.3 2547.18 496.48 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2547.51 499.97 moveto
+2557.27 495.85 lineto
+2547.07 492.98 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2547.51 499.97 moveto
+2557.27 495.85 lineto
+2547.07 492.98 lineto
+closepath stroke
+[ /Rect [ 2031.5 531 2284.5 544 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/2000/01/rdf-schema#label) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2031.5 535 moveto 253 (http://www.w3.org/2000/01/rdf-schema#label) alignedtext
+grestore
+% http://www.biopax.org/release/biopax-level3.owl#EvidenceCodeVocabulary
+gsave
+[ /Rect [ 2318 256 2856 292 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.biopax.org/release/biopax-level3.owl#EvidenceCodeVocabulary) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 274 269.01 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2376.5 271.5 moveto 421 (http://www.biopax.org/release/biopax-level3.owl#EvidenceCodeVocabulary) alignedtext
+grestore
+% genid:Ugenidb939f8b0698201316acf406c8fb9222b->http://www.biopax.org/release/biopax-level3.owl#EvidenceCodeVocabulary
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1921.63 230.37 moveto
+1952.72 232.6 1985.47 234.91 2016 237 curveto
+2136.98 245.28 2272.4 254.07 2381 261.01 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2380.89 264.51 moveto
+2391.09 261.65 lineto
+2381.33 257.52 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2380.89 264.51 moveto
+2391.09 261.65 lineto
+2381.33 257.52 lineto
+closepath stroke
+[ /Rect [ 2016.5 255 2299.5 268 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 259 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% Literal_4
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 2614 238 moveto
+2560 238 lineto
+2560 202 lineto
+2614 202 lineto
+closepath stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2571.5 217.5 moveto 31 (GO_ID) alignedtext
+grestore
+% genid:Ugenidb939f8b0698201316acf406c8fb9222b->Literal_4
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1953.12 220 moveto
+2146.33 220 2445.51 220 2549.71 220 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2549.74 223.5 moveto
+2559.74 220 lineto
+2549.74 216.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2549.74 223.5 moveto
+2559.74 220 lineto
+2549.74 216.5 lineto
+closepath stroke
+[ /Rect [ 2031.5 220 2284.5 233 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/2000/01/rdf-schema#label) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2031.5 224 moveto 253 (http://www.w3.org/2000/01/rdf-schema#label) alignedtext
+grestore
+% genid:Ugenidffb12c406ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2587 1172 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2454.5 1169.5 moveto 265 (genid:Ugenidffb12c406ba701316ae9406c8fb9222b) alignedtext
+grestore
+% genid:Ugenidffac64906ba701316ae9406c8fb9222b->genid:Ugenidffb12c406ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1921.63 1128.37 moveto
+1952.72 1130.6 1985.47 1132.91 2016 1135 curveto
+2155.38 1144.54 2313.94 1154.76 2428.54 1162.04 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2428.59 1165.55 moveto
+2438.8 1162.69 lineto
+2429.04 1158.56 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2428.59 1165.55 moveto
+2438.8 1162.69 lineto
+2429.04 1158.56 lineto
+closepath stroke
+[ /Rect [ 2025.5 1153 2290.5 1166 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://biohackathon.org/resource/faldo#begin) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2025.5 1157 moveto 265 (http://biohackathon.org/resource/faldo#begin) alignedtext
+grestore
+% genid:Ugenidffb186406ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2587 1118 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2454.5 1115.5 moveto 265 (genid:Ugenidffb186406ba701316ae9406c8fb9222b) alignedtext
+grestore
+% genid:Ugenidffac64906ba701316ae9406c8fb9222b->genid:Ugenidffb186406ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1953.12 1118 moveto
+2085.85 1118 2268.58 1118 2403.76 1118 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2403.82 1121.5 moveto
+2413.82 1118 lineto
+2403.82 1114.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2403.82 1121.5 moveto
+2413.82 1118 lineto
+2403.82 1114.5 lineto
+closepath stroke
+[ /Rect [ 2031.5 1118 2284.5 1131 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://biohackathon.org/resource/faldo#end) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2031.5 1122 moveto 253 (http://biohackathon.org/resource/faldo#end) alignedtext
+grestore
+% http://biohackathon.org/resource/faldo#Region
+gsave
+[ /Rect [ 2411 1370 2763 1406 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://biohackathon.org/resource/faldo#Region) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 1388 176.17 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2451.5 1385.5 moveto 271 (http://biohackathon.org/resource/faldo#Region) alignedtext
+grestore
+% genid:Ugenidffac64906ba701316ae9406c8fb9222b->http://biohackathon.org/resource/faldo#Region
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1840.02 1134.92 moveto
+1889.79 1152.06 1958.54 1183.52 1998 1235 curveto
+2019.38 1262.89 1989.21 1289.25 2016 1312 curveto
+2064.22 1352.94 2246.03 1298.01 2300 1331 curveto
+2313.27 1339.11 2304.87 1352.67 2318 1361 curveto
+2348.34 1380.24 2384.59 1390.39 2420.5 1395.17 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2420.27 1398.66 moveto
+2430.62 1396.37 lineto
+2421.1 1391.71 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2420.27 1398.66 moveto
+2430.62 1396.37 lineto
+2421.1 1391.71 lineto
+closepath stroke
+[ /Rect [ 2016.5 1331 2299.5 1344 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 1335 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% http://purl.uniprot.org/core/Range
+gsave
+[ /Rect [ 2451 1046 2723 1082 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://purl.uniprot.org/core/Range) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 1064 136.04 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2484.5 1061.5 moveto 205 (http://purl.uniprot.org/core/Range) alignedtext
+grestore
+% genid:Ugenidffac64906ba701316ae9406c8fb9222b->http://purl.uniprot.org/core/Range
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1921.63 1107.63 moveto
+1952.72 1105.4 1985.47 1103.09 2016 1101 curveto
+2165.84 1090.75 2337.85 1079.7 2453.58 1072.37 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2454.14 1075.84 moveto
+2463.9 1071.72 lineto
+2453.7 1068.86 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2454.14 1075.84 moveto
+2463.9 1071.72 lineto
+2453.7 1068.86 lineto
+closepath stroke
+[ /Rect [ 2016.5 1101 2299.5 1114 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 1105 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenidffb18ee06ba701316ae9406c8fb9222b->http://biohackathon.org/resource/faldo#Region
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1921.63 1431.63 moveto
+1952.72 1429.4 1985.47 1427.09 2016 1425 curveto
+2154.53 1415.52 2312.02 1405.36 2426.46 1398.09 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2426.94 1401.57 moveto
+2436.7 1397.44 lineto
+2426.5 1394.58 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2426.94 1401.57 moveto
+2436.7 1397.44 lineto
+2426.5 1394.58 lineto
+closepath stroke
+[ /Rect [ 2016.5 1425 2299.5 1438 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 1429 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenidffb196806ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2587 1496 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2454.5 1493.5 moveto 265 (genid:Ugenidffb196806ba701316ae9406c8fb9222b) alignedtext
+grestore
+% genid:Ugenidffb18ee06ba701316ae9406c8fb9222b->genid:Ugenidffb196806ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1921.63 1452.37 moveto
+1952.72 1454.6 1985.47 1456.91 2016 1459 curveto
+2155.38 1468.54 2313.94 1478.76 2428.54 1486.04 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2428.59 1489.55 moveto
+2438.8 1486.69 lineto
+2429.04 1482.56 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2428.59 1489.55 moveto
+2438.8 1486.69 lineto
+2429.04 1482.56 lineto
+closepath stroke
+[ /Rect [ 2025.5 1477 2290.5 1490 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://biohackathon.org/resource/faldo#begin) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2025.5 1481 moveto 265 (http://biohackathon.org/resource/faldo#begin) alignedtext
+grestore
+% genid:Ugenidffb19cc06ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2587 1550 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2454.5 1547.5 moveto 265 (genid:Ugenidffb19cc06ba701316ae9406c8fb9222b) alignedtext
+grestore
+% genid:Ugenidffb18ee06ba701316ae9406c8fb9222b->genid:Ugenidffb19cc06ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1845.72 1458.69 moveto
+1892.85 1470.11 1957.99 1484.8 2016 1494 curveto
+2155.18 1516.08 2314.93 1530.86 2429.99 1539.66 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2430.05 1543.18 moveto
+2440.29 1540.44 lineto
+2430.58 1536.2 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2430.05 1543.18 moveto
+2440.29 1540.44 lineto
+2430.58 1536.2 lineto
+closepath stroke
+[ /Rect [ 2031.5 1528 2284.5 1541 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://biohackathon.org/resource/faldo#end) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2031.5 1532 moveto 253 (http://biohackathon.org/resource/faldo#end) alignedtext
+grestore
+% http://edamontology.org/format_1953
+gsave
+[ /Rect [ 2448 1424 2726 1460 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/format_1953) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 1442 139.24 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2481.5 1439.5 moveto 211 (http://edamontology.org/format_1953) alignedtext
+grestore
+% genid:Ugenidffb18ee06ba701316ae9406c8fb9222b->http://edamontology.org/format_1953
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1953.12 1442 moveto
+2097.14 1442 2300.05 1442 2437.18 1442 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2437.35 1445.5 moveto
+2447.35 1442 lineto
+2437.35 1438.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2437.35 1445.5 moveto
+2447.35 1442 lineto
+2437.35 1438.5 lineto
+closepath stroke
+[ /Rect [ 2016.5 1442 2299.5 1455 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 1446 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenidffb1a2906ba701316ae9406c8fb9222b->http://biohackathon.org/resource/faldo#Region
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1818.27 1279.73 moveto
+1864.16 1300.09 1943.92 1332.66 2016 1348 curveto
+2142.43 1374.91 2287.79 1384.8 2400.21 1388.02 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2400.21 1391.52 moveto
+2410.3 1388.29 lineto
+2400.4 1384.52 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2400.21 1391.52 moveto
+2410.3 1388.29 lineto
+2400.4 1384.52 lineto
+closepath stroke
+[ /Rect [ 2016.5 1383 2299.5 1396 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 1387 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% genid:Ugenidffb1a9f06ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2587 1334 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2454.5 1331.5 moveto 265 (genid:Ugenidffb1a9f06ba701316ae9406c8fb9222b) alignedtext
+grestore
+% genid:Ugenidffb1a2906ba701316ae9406c8fb9222b->genid:Ugenidffb1a9f06ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1928.26 1271.29 moveto
+2075.55 1280.71 2282.08 1294.53 2300 1299 curveto
+2308.49 1301.12 2309.54 1304.76 2318 1307 curveto
+2350.21 1315.54 2385.24 1321.42 2419.05 1325.46 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2418.69 1328.94 moveto
+2429.03 1326.6 lineto
+2419.49 1321.98 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2418.69 1328.94 moveto
+2429.03 1326.6 lineto
+2419.49 1321.98 lineto
+closepath stroke
+[ /Rect [ 2025.5 1299 2290.5 1312 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://biohackathon.org/resource/faldo#begin) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2025.5 1303 moveto 265 (http://biohackathon.org/resource/faldo#begin) alignedtext
+grestore
+% genid:Ugenidffb1b0406ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+2587 1280 172.98 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2454.5 1277.5 moveto 265 (genid:Ugenidffb1b0406ba701316ae9406c8fb9222b) alignedtext
+grestore
+% genid:Ugenidffb1a2906ba701316ae9406c8fb9222b->genid:Ugenidffb1b0406ba701316ae9406c8fb9222b
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1951.89 1259.86 moveto
+2053.23 1259.22 2183.93 1259.45 2300 1263 curveto
+2343.39 1264.33 2390.43 1266.71 2433.62 1269.29 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2433.45 1272.78 moveto
+2443.64 1269.89 lineto
+2433.87 1265.8 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2433.45 1272.78 moveto
+2443.64 1269.89 lineto
+2433.87 1265.8 lineto
+closepath stroke
+[ /Rect [ 2031.5 1263 2284.5 1276 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://biohackathon.org/resource/faldo#end) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2031.5 1267 moveto 253 (http://biohackathon.org/resource/faldo#end) alignedtext
+grestore
+% http://edamontology.org/format_1950
+gsave
+[ /Rect [ 2448 1208 2726 1244 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://edamontology.org/format_1950) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+2587 1226 139.24 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+2481.5 1223.5 moveto 211 (http://edamontology.org/format_1950) alignedtext
+grestore
+% genid:Ugenidffb1a2906ba701316ae9406c8fb9222b->http://edamontology.org/format_1950
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 1907.9 1249.83 moveto
+1942.92 1246.87 1980.9 1243.98 2016 1242 curveto
+2158.97 1233.95 2322.31 1229.89 2437.56 1227.88 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 2437.93 1231.37 moveto
+2447.87 1227.7 lineto
+2437.81 1224.37 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 2437.93 1231.37 moveto
+2447.87 1227.7 lineto
+2437.81 1224.37 lineto
+closepath stroke
+[ /Rect [ 2016.5 1242 2299.5 1255 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2016.5 1246 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% http://biohackathon.org/resource/faldo#Position
+gsave
+[ /Rect [ 3206 1302 3574 1338 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://biohackathon.org/resource/faldo#Position) >>
+  /Subtype /Link
+/ANN pdfmark
+1 setlinewidth
+0 0 0 nodecolor
+3390 1320 184.06 18 ellipse_path stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+3248.5 1317.5 moveto 283 (http://biohackathon.org/resource/faldo#Position) alignedtext
+grestore
+% genid:Ugenidffb12c406ba701316ae9406c8fb9222b->http://biohackathon.org/resource/faldo#Position
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2696.65 1158.08 moveto
+2749.59 1157.15 2811.19 1165.27 2856 1199 curveto
+2873.21 1211.95 2856.76 1231.09 2874 1244 curveto
+2930.11 1286.02 3118.8 1262.86 3188 1274 curveto
+3230.54 1280.85 3277.5 1291.36 3315.43 1300.61 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3314.82 1304.06 moveto
+3325.37 1303.05 lineto
+3316.5 1297.26 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3314.82 1304.06 moveto
+3325.37 1303.05 lineto
+3316.5 1297.26 lineto
+closepath stroke
+[ /Rect [ 2889.5 1274 3172.5 1287 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2889.5 1278 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% Literal_5
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 3417 1167 moveto
+3363 1167 lineto
+3363 1131 lineto
+3417 1131 lineto
+closepath stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+3371.5 1146.5 moveto 37 (SP_BEG) alignedtext
+grestore
+% genid:Ugenidffb12c406ba701316ae9406c8fb9222b->Literal_5
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2743 1164.2 moveto
+2785.48 1162.27 2831.5 1160.37 2874 1159 curveto
+3053.28 1153.2 3267.7 1150.36 3352.68 1149.39 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3352.9 1152.89 moveto
+3362.86 1149.28 lineto
+3352.82 1145.89 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3352.9 1152.89 moveto
+3362.86 1149.28 lineto
+3352.82 1145.89 lineto
+closepath stroke
+[ /Rect [ 2904.5 1159 3157.5 1172 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/2000/01/rdf-schema#label) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2904.5 1163 moveto 253 (http://www.w3.org/2000/01/rdf-schema#label) alignedtext
+grestore
+% genid:Ugenidffb186406ba701316ae9406c8fb9222b->http://biohackathon.org/resource/faldo#Position
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2681.74 1102.9 moveto
+2738.43 1099.33 2808.47 1105.26 2856 1145 curveto
+2878.34 1163.68 2851.29 1189.77 2874 1208 curveto
+2901.26 1229.88 3154.1 1218.49 3188 1227 curveto
+3247.97 1242.06 3311.97 1274.67 3351.48 1296.99 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3350.08 1300.22 moveto
+3360.5 1302.14 lineto
+3353.55 1294.14 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3350.08 1300.22 moveto
+3360.5 1302.14 lineto
+3353.55 1294.14 lineto
+closepath stroke
+[ /Rect [ 2889.5 1227 3172.5 1240 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2889.5 1231 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% Literal_6
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 3417 1113 moveto
+3363 1113 lineto
+3363 1077 lineto
+3417 1077 lineto
+closepath stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+3371.5 1092.5 moveto 37 (SP_END) alignedtext
+grestore
+% genid:Ugenidffb186406ba701316ae9406c8fb9222b->Literal_6
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2753.87 1113.22 moveto
+2945.79 1107.72 3247.89 1099.07 3352.71 1096.07 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3352.91 1099.56 moveto
+3362.8 1095.78 lineto
+3352.7 1092.57 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3352.91 1099.56 moveto
+3362.8 1095.78 lineto
+3352.7 1092.57 lineto
+closepath stroke
+[ /Rect [ 2904.5 1109 3157.5 1122 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/2000/01/rdf-schema#label) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2904.5 1113 moveto 253 (http://www.w3.org/2000/01/rdf-schema#label) alignedtext
+grestore
+% genid:Ugenidffb196806ba701316ae9406c8fb9222b->http://biohackathon.org/resource/faldo#Position
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2671.62 1511.7 moveto
+2730.67 1517.48 2807.33 1513.85 2856 1469 curveto
+2888.56 1438.99 2841.17 1400.73 2874 1371 curveto
+2899.95 1347.5 3153.18 1348.6 3188 1345 curveto
+3214.49 1342.26 3242.9 1338.97 3269.79 1335.69 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3270.51 1339.13 moveto
+3280.01 1334.43 lineto
+3269.66 1332.18 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3270.51 1339.13 moveto
+3280.01 1334.43 lineto
+3269.66 1332.18 lineto
+closepath stroke
+[ /Rect [ 2889.5 1371 3172.5 1384 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2889.5 1375 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% Literal_7
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 3419 1514 moveto
+3361 1514 lineto
+3361 1478 lineto
+3419 1478 lineto
+closepath stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+3368.5 1493.5 moveto 43 (RES_BEG) alignedtext
+grestore
+% genid:Ugenidffb196806ba701316ae9406c8fb9222b->Literal_7
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2760.25 1496 moveto
+2950.81 1496 3244.08 1496 3350.06 1496 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3350.31 1499.5 moveto
+3360.31 1496 lineto
+3350.31 1492.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3350.31 1499.5 moveto
+3360.31 1496 lineto
+3350.31 1492.5 lineto
+closepath stroke
+[ /Rect [ 2904.5 1496 3157.5 1509 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/2000/01/rdf-schema#label) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2904.5 1500 moveto 253 (http://www.w3.org/2000/01/rdf-schema#label) alignedtext
+grestore
+% genid:Ugenidffb19cc06ba701316ae9406c8fb9222b->http://biohackathon.org/resource/faldo#Position
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2698.21 1563.8 moveto
+2750.74 1564.49 2811.52 1556.2 2856 1523 curveto
+2872.93 1510.36 2857.5 1492.2 2874 1479 curveto
+2984.51 1390.58 3077.14 1513.97 3188 1426 curveto
+3204.23 1413.12 3190.87 1397.15 3206 1383 curveto
+3228.48 1361.96 3258.3 1347.92 3287.37 1338.56 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3288.64 1341.83 moveto
+3297.18 1335.56 lineto
+3286.6 1335.13 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3288.64 1341.83 moveto
+3297.18 1335.56 lineto
+3286.6 1335.13 lineto
+closepath stroke
+[ /Rect [ 2889.5 1479 3172.5 1492 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2889.5 1483 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% Literal_8
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 3419 1568 moveto
+3361 1568 lineto
+3361 1532 lineto
+3419 1532 lineto
+closepath stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+3368.5 1547.5 moveto 43 (RES_END) alignedtext
+grestore
+% genid:Ugenidffb19cc06ba701316ae9406c8fb9222b->Literal_8
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2760.25 1550 moveto
+2950.81 1550 3244.08 1550 3350.06 1550 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3350.31 1553.5 moveto
+3360.31 1550 lineto
+3350.31 1546.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3350.31 1553.5 moveto
+3360.31 1550 lineto
+3350.31 1546.5 lineto
+closepath stroke
+[ /Rect [ 2904.5 1550 3157.5 1563 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/2000/01/rdf-schema#label) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2904.5 1554 moveto 253 (http://www.w3.org/2000/01/rdf-schema#label) alignedtext
+grestore
+% genid:Ugenidffb1a9f06ba701316ae9406c8fb9222b->http://biohackathon.org/resource/faldo#Position
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2757.79 1331.02 moveto
+2886.93 1328.77 3064.28 1325.68 3198.27 1323.34 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3198.72 1326.84 moveto
+3208.66 1323.16 lineto
+3198.6 1319.84 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3198.72 1326.84 moveto
+3208.66 1323.16 lineto
+3198.6 1319.84 lineto
+closepath stroke
+[ /Rect [ 2889.5 1328 3172.5 1341 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2889.5 1332 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% Literal_9
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 3419 1428 moveto
+3361 1428 lineto
+3361 1392 lineto
+3419 1392 lineto
+closepath stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+3368.5 1407.5 moveto 43 (PDB_BEG) alignedtext
+grestore
+% genid:Ugenidffb1a9f06ba701316ae9406c8fb9222b->Literal_9
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2747.28 1327.22 moveto
+2785.01 1331.63 2823.62 1341.53 2856 1361 curveto
+2868.36 1368.43 2861.43 1380.93 2874 1388 curveto
+2915.06 1411.11 3236.54 1411.1 3350.29 1410.36 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3350.34 1413.86 moveto
+3360.32 1410.29 lineto
+3350.29 1406.86 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3350.34 1413.86 moveto
+3360.32 1410.29 lineto
+3350.29 1406.86 lineto
+closepath stroke
+[ /Rect [ 2904.5 1409 3157.5 1422 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/2000/01/rdf-schema#label) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2904.5 1413 moveto 253 (http://www.w3.org/2000/01/rdf-schema#label) alignedtext
+grestore
+% genid:Ugenidffb1b0406ba701316ae9406c8fb9222b->http://biohackathon.org/resource/faldo#Position
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2750.63 1285.93 moveto
+2871.51 1290.59 3040.06 1297.67 3188 1306 curveto
+3202.19 1306.8 3216.93 1307.69 3231.7 1308.64 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3231.72 1312.14 moveto
+3241.92 1309.29 lineto
+3232.17 1305.16 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3231.72 1312.14 moveto
+3241.92 1309.29 lineto
+3232.17 1305.16 lineto
+closepath stroke
+[ /Rect [ 2889.5 1306 3172.5 1319 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2889.5 1310 moveto 283 (http://www.w3.org/1999/02/22-rdf-syntax-ns#type) alignedtext
+grestore
+% Literal_10
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+newpath 3419 1221 moveto
+3361 1221 lineto
+3361 1185 lineto
+3419 1185 lineto
+closepath stroke
+0.66667 1 1 nodecolor
+10 /Courier set_font
+3368.5 1200.5 moveto 43 (PDB_END) alignedtext
+grestore
+% genid:Ugenidffb1b0406ba701316ae9406c8fb9222b->Literal_10
+gsave
+1 setlinewidth
+0.33333 1 0.39216 edgecolor
+newpath 2684.33 1294.89 moveto
+2740.38 1297.94 2808.84 1291.53 2856 1253 curveto
+2876.9 1235.92 2852.27 1211.01 2874 1195 curveto
+2930.18 1153.61 3118.24 1193.62 3188 1195 curveto
+3244.33 1196.11 3309.44 1198.98 3350.17 1200.96 curveto
+stroke
+0.33333 1 0.39216 edgecolor
+newpath 3350.07 1204.46 moveto
+3360.23 1201.45 lineto
+3350.42 1197.46 lineto
+closepath fill
+1 setlinewidth
+solid
+0.33333 1 0.39216 edgecolor
+newpath 3350.07 1204.46 moveto
+3360.23 1201.45 lineto
+3350.42 1197.46 lineto
+closepath stroke
+[ /Rect [ 2904.5 1195 3157.5 1208 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI (http://www.w3.org/2000/01/rdf-schema#label) >>
+  /Subtype /Link
+/ANN pdfmark
+0 1 1 edgecolor
+10 /Courier set_font
+2904.5 1199 moveto 253 (http://www.w3.org/2000/01/rdf-schema#label) alignedtext
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 4864 1612
+end
+restore
+%%EOF

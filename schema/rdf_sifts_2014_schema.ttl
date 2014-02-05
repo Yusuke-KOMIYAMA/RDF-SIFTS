@@ -38,9 +38,6 @@
     <http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock> <http://rdf.wwpdb.org/pdb/PDB> ;
     a <http://rdf.wwpdb.org/schema/pdbx-v40.owl#struct_asym> .
 
-<http://utprot.net/PDB>
-    a <http://edamontology.org/data_1127> .
-
 <http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID>
     <http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock> <http://rdf.wwpdb.org/pdb/PDB> ;
     <http://rdf.wwpdb.org/schema/pdbx-v40.owl#struct_asym.id> <http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID> ;
@@ -51,13 +48,13 @@
         <http://edamontology.org/has_identifier> <http://info.identifiers.org/taxonomy/TAX_ID> ;
         a <http://edamontology.org/data_0954>
     ], [
-        <http://edamontology.org/has_identifier> <http://info.identifiers.org/interpro/INTERPRO_ID> ;
-        a <http://edamontology.org/data_0954>
-    ], [
         <http://edamontology.org/has_identifier> <http://info.identifiers.org/scop/SUNID>, <http://www.uniprot.org/uniprot/SP_PRIMARY>, [
             a <http://edamontology.org/data_1039> ;
             <http://www.w3.org/2000/01/rdf-schema#label> "SCOP_ID"
         ] ;
+        a <http://edamontology.org/data_0954>
+    ], [
+        <http://edamontology.org/has_identifier> <http://info.identifiers.org/interpro/INTERPRO_ID> ;
         a <http://edamontology.org/data_0954>
     ], [
         <http://edamontology.org/has_identifier> <http://info.identifiers.org/go/GO_ID>, <http://www.uniprot.org/uniprot/SP_PRIMARY> ;
@@ -111,7 +108,7 @@
         <http://edamontology.org/has_identifier> <http://www.uniprot.org/uniprot/SP_PRIMARY> ;
         a <http://edamontology.org/data_0954>
     ] ;
-    <http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock> <http://rdf.wwpdb.org/pdb/PDB>, <http://utprot.net/PDB> ;
+    <http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock> <http://rdf.wwpdb.org/pdb/PDB> ;
     a <http://edamontology.org/data_1008> .
 
 <http://www.uniprot.org/uniprot/ACCESSION>
