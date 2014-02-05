@@ -216,15 +216,56 @@
 <text text-anchor="middle" x="2158" y="-1014" font-family="Courier,monospace" font-size="10.00" fill="red">http://www.w3.org/2000/01/rdf&#45;schema#label</text>
 </a>
 </g>
+<!-- http://purl.uniprot.org/uniprot/ACCESSION -->
+<g id="node27" class="node"><title>http://purl.uniprot.org/uniprot/ACCESSION</title>
+<a xlink:href="http://purl.uniprot.org/uniprot/ACCESSION" xlink:title="http://purl.uniprot.org/uniprot/ACCESSION">
+<ellipse fill="none" stroke="black" cx="1780" cy="-602" rx="161.899" ry="18"/>
+<text text-anchor="middle" x="1780" y="-599.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://purl.uniprot.org/uniprot/ACCESSION</text>
+</a>
+</g>
+<!-- http://purl.uniprot.org/core/Protein -->
+<g id="node29" class="node"><title>http://purl.uniprot.org/core/Protein</title>
+<a xlink:href="http://purl.uniprot.org/core/Protein" xlink:title="http://purl.uniprot.org/core/Protein">
+<ellipse fill="none" stroke="black" cx="2587" cy="-602" rx="142.932" ry="18"/>
+<text text-anchor="middle" x="2587" y="-599.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://purl.uniprot.org/core/Protein</text>
+</a>
+</g>
+<!-- http://purl.uniprot.org/uniprot/ACCESSION&#45;&gt;http://purl.uniprot.org/core/Protein -->
+<g id="edge20" class="edge"><title>http://purl.uniprot.org/uniprot/ACCESSION&#45;&gt;http://purl.uniprot.org/core/Protein</title>
+<a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type">
+<path fill="none" stroke="darkgreen" d="M1942.34,-602C2085.5,-602 2292.63,-602 2433.18,-602"/>
+<polygon fill="darkgreen" stroke="darkgreen" points="2433.18,-605.5 2443.18,-602 2433.18,-598.5 2433.18,-605.5"/>
+</a>
+<a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type">
+<text text-anchor="middle" x="2158" y="-606" font-family="Courier,monospace" font-size="10.00" fill="red">http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type</text>
+</a>
+</g>
+<!-- http://purl.uniprot.org/uniprot/SP_PRIMARY -->
+<g id="node30" class="node"><title>http://purl.uniprot.org/uniprot/SP_PRIMARY</title>
+<a xlink:href="http://purl.uniprot.org/uniprot/SP_PRIMARY" xlink:title="http://purl.uniprot.org/uniprot/SP_PRIMARY">
+<ellipse fill="none" stroke="black" cx="1780" cy="-799" rx="165.093" ry="18"/>
+<text text-anchor="middle" x="1780" y="-796.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://purl.uniprot.org/uniprot/SP_PRIMARY</text>
+</a>
+</g>
+<!-- http://purl.uniprot.org/uniprot/SP_PRIMARY&#45;&gt;http://purl.uniprot.org/core/Protein -->
+<g id="edge22" class="edge"><title>http://purl.uniprot.org/uniprot/SP_PRIMARY&#45;&gt;http://purl.uniprot.org/core/Protein</title>
+<a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type">
+<path fill="none" stroke="darkgreen" d="M1944.61,-796.899C2056.68,-787.194 2201.91,-757.324 2300,-673 2316.02,-659.226 2301.07,-641.639 2318,-629 2363.76,-594.841 2426.78,-587.051 2480.32,-588.282"/>
+<polygon fill="darkgreen" stroke="darkgreen" points="2480.43,-591.788 2490.54,-588.628 2480.67,-584.792 2480.43,-591.788"/>
+</a>
+<a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type">
+<text text-anchor="middle" x="2158" y="-790" font-family="Courier,monospace" font-size="10.00" fill="red">http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type</text>
+</a>
+</g>
 <!-- http://rdf.wwpdb.org/pdb/PDB/citation/primary -->
-<g id="node27" class="node"><title>http://rdf.wwpdb.org/pdb/PDB/citation/primary</title>
+<g id="node32" class="node"><title>http://rdf.wwpdb.org/pdb/PDB/citation/primary</title>
 <a xlink:href="http://rdf.wwpdb.org/pdb/PDB/citation/primary" xlink:title="http://rdf.wwpdb.org/pdb/PDB/citation/primary">
 <ellipse fill="none" stroke="black" cx="3390" cy="-103" rx="176.173" ry="18"/>
 <text text-anchor="middle" x="3390" y="-100.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://rdf.wwpdb.org/pdb/PDB/citation/primary</text>
 </a>
 </g>
 <!-- http://rdf.wwpdb.org/pdb/PDB/citation/primary&#45;&gt;http://info.identifiers.org/pubmed/PUBMED_ID -->
-<g id="edge20" class="edge"><title>http://rdf.wwpdb.org/pdb/PDB/citation/primary&#45;&gt;http://info.identifiers.org/pubmed/PUBMED_ID</title>
+<g id="edge24" class="edge"><title>http://rdf.wwpdb.org/pdb/PDB/citation/primary&#45;&gt;http://info.identifiers.org/pubmed/PUBMED_ID</title>
 <a xlink:href="http://semanticscience.org/resource/SIO_000628" xlink:title="http://semanticscience.org/resource/SIO_000628">
 <path fill="none" stroke="darkgreen" d="M3566.74,-103C3662.55,-103 3780.82,-103 3877.64,-103"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="3877.84,-106.5 3887.84,-103 3877.84,-99.5001 3877.84,-106.5"/>
@@ -234,21 +275,21 @@
 </a>
 </g>
 <!-- http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID -->
-<g id="node29" class="node"><title>http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID</title>
+<g id="node34" class="node"><title>http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID</title>
 <a xlink:href="http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID" xlink:title="http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID">
 <ellipse fill="none" stroke="black" cx="954" cy="-28" rx="209.915" ry="18"/>
 <text text-anchor="middle" x="954" y="-25.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID</text>
 </a>
 </g>
 <!-- http://rdf.wwpdb.org/pdb/PDB -->
-<g id="node31" class="node"><title>http://rdf.wwpdb.org/pdb/PDB</title>
+<g id="node36" class="node"><title>http://rdf.wwpdb.org/pdb/PDB</title>
 <a xlink:href="http://rdf.wwpdb.org/pdb/PDB" xlink:title="http://rdf.wwpdb.org/pdb/PDB">
 <ellipse fill="none" stroke="black" cx="1780" cy="-82" rx="113.884" ry="18"/>
 <text text-anchor="middle" x="1780" y="-79.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://rdf.wwpdb.org/pdb/PDB</text>
 </a>
 </g>
 <!-- http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID&#45;&gt;http://rdf.wwpdb.org/pdb/PDB -->
-<g id="edge22" class="edge"><title>http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID&#45;&gt;http://rdf.wwpdb.org/pdb/PDB</title>
+<g id="edge26" class="edge"><title>http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID&#45;&gt;http://rdf.wwpdb.org/pdb/PDB</title>
 <a xlink:href="http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock" xlink:title="http://rdf.wwpdb.org/schema/pdbx&#45;v40.owl#of_datablock">
 <path fill="none" stroke="darkgreen" d="M1153.24,-33.7362C1267.69,-37.8772 1414.06,-44.6063 1544,-55 1589.48,-58.6379 1639.72,-64.1739 1682.12,-69.2881"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="1681.81,-72.7761 1692.16,-70.5088 1682.66,-65.8273 1681.81,-72.7761"/>
@@ -258,14 +299,14 @@
 </a>
 </g>
 <!-- http://rdf.wwpdb.org/schema/pdbx&#45;v40.owl#struct_asym -->
-<g id="node33" class="node"><title>http://rdf.wwpdb.org/schema/pdbx&#45;v40.owl#struct_asym</title>
+<g id="node38" class="node"><title>http://rdf.wwpdb.org/schema/pdbx&#45;v40.owl#struct_asym</title>
 <a xlink:href="http://rdf.wwpdb.org/schema/pdbx-v40.owl#struct_asym" xlink:title="http://rdf.wwpdb.org/schema/pdbx&#45;v40.owl#struct_asym">
 <ellipse fill="none" stroke="black" cx="1780" cy="-18" rx="202.028" ry="18"/>
 <text text-anchor="middle" x="1780" y="-15.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://rdf.wwpdb.org/schema/pdbx&#45;v40.owl#struct_asym</text>
 </a>
 </g>
 <!-- http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID&#45;&gt;http://rdf.wwpdb.org/schema/pdbx&#45;v40.owl#struct_asym -->
-<g id="edge24" class="edge"><title>http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID&#45;&gt;http://rdf.wwpdb.org/schema/pdbx&#45;v40.owl#struct_asym</title>
+<g id="edge28" class="edge"><title>http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID&#45;&gt;http://rdf.wwpdb.org/schema/pdbx&#45;v40.owl#struct_asym</title>
 <a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type">
 <path fill="none" stroke="darkgreen" d="M1142.48,-20.0036C1155.85,-19.6073 1169.13,-19.2647 1182,-19 1310.09,-16.3658 1453.64,-16.0388 1567.98,-16.4068"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="1568.24,-19.9076 1578.26,-16.4419 1568.27,-12.9076 1568.24,-19.9076"/>
@@ -275,12 +316,12 @@
 </a>
 </g>
 <!-- genid:Ugenid042e79a06c7801316aeb406c8fb9222b -->
-<g id="node35" class="node"><title>genid:Ugenid042e79a06c7801316aeb406c8fb9222b</title>
+<g id="node40" class="node"><title>genid:Ugenid042e79a06c7801316aeb406c8fb9222b</title>
 <ellipse fill="none" stroke="black" cx="2587" cy="-103" rx="172.98" ry="18"/>
 <text text-anchor="middle" x="2587" y="-100.5" font-family="Courier,monospace" font-size="10.00" fill="blue">genid:Ugenid042e79a06c7801316aeb406c8fb9222b</text>
 </g>
 <!-- http://rdf.wwpdb.org/pdb/PDB&#45;&gt;genid:Ugenid042e79a06c7801316aeb406c8fb9222b -->
-<g id="edge26" class="edge"><title>http://rdf.wwpdb.org/pdb/PDB&#45;&gt;genid:Ugenid042e79a06c7801316aeb406c8fb9222b</title>
+<g id="edge30" class="edge"><title>http://rdf.wwpdb.org/pdb/PDB&#45;&gt;genid:Ugenid042e79a06c7801316aeb406c8fb9222b</title>
 <a xlink:href="http://purl.org/dc/terms/identifier" xlink:title="http://purl.org/dc/terms/identifier">
 <path fill="none" stroke="darkgreen" d="M1892.63,-84.931C2026.45,-88.4131 2251.34,-94.2654 2408.83,-98.3636"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="2409.02,-101.87 2419.1,-98.631 2409.2,-94.8719 2409.02,-101.87"/>
@@ -290,14 +331,14 @@
 </a>
 </g>
 <!-- http://edamontology.org/data_1127 -->
-<g id="node37" class="node"><title>http://edamontology.org/data_1127</title>
+<g id="node42" class="node"><title>http://edamontology.org/data_1127</title>
 <a xlink:href="http://edamontology.org/data_1127" xlink:title="http://edamontology.org/data_1127">
 <ellipse fill="none" stroke="black" cx="2587" cy="-49" rx="131.852" ry="18"/>
 <text text-anchor="middle" x="2587" y="-46.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://edamontology.org/data_1127</text>
 </a>
 </g>
 <!-- http://rdf.wwpdb.org/pdb/PDB&#45;&gt;http://edamontology.org/data_1127 -->
-<g id="edge28" class="edge"><title>http://rdf.wwpdb.org/pdb/PDB&#45;&gt;http://edamontology.org/data_1127</title>
+<g id="edge32" class="edge"><title>http://rdf.wwpdb.org/pdb/PDB&#45;&gt;http://edamontology.org/data_1127</title>
 <a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type">
 <path fill="none" stroke="darkgreen" d="M1890.16,-77.2845C1929.83,-75.5991 1974.92,-73.6975 2016,-72 2164.06,-65.881 2333.73,-59.0726 2449.39,-54.4623"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="2449.86,-57.9464 2459.71,-54.0509 2449.58,-50.952 2449.86,-57.9464"/>
@@ -317,14 +358,14 @@
 </a>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID -->
-<g id="node38" class="node"><title>http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID</title>
+<g id="node43" class="node"><title>http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID</title>
 <a xlink:href="http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID" xlink:title="http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID">
 <ellipse fill="none" stroke="black" cx="188" cy="-82" rx="187.754" ry="18"/>
 <text text-anchor="middle" x="188" y="-79.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID</text>
 </a>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID&#45;&gt;http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID -->
-<g id="edge32" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID&#45;&gt;http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID</title>
+<g id="edge36" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID&#45;&gt;http://rdf.wwpdb.org/pdb/PDB/struct_asym/LABEL_ASYM_ID</title>
 <a xlink:href="http://rdf.wwpdb.org/schema/pdbx-v40.owl#struct_asym.id" xlink:title="http://rdf.wwpdb.org/schema/pdbx&#45;v40.owl#struct_asym.id">
 <path fill="none" stroke="darkgreen" d="M290.503,-66.8782C323.485,-62.4652 360.229,-58.0221 394,-55 509.637,-44.6518 639.086,-38.0853 744.374,-34.0229"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="744.627,-37.5159 754.486,-33.6375 744.36,-30.5209 744.627,-37.5159"/>
@@ -334,7 +375,7 @@
 </a>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID&#45;&gt;http://rdf.wwpdb.org/pdb/PDB -->
-<g id="edge30" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID&#45;&gt;http://rdf.wwpdb.org/pdb/PDB</title>
+<g id="edge34" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID&#45;&gt;http://rdf.wwpdb.org/pdb/PDB</title>
 <a xlink:href="http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock" xlink:title="http://rdf.wwpdb.org/schema/pdbx&#45;v40.owl#of_datablock">
 <path fill="none" stroke="darkgreen" d="M376.089,-82C705.455,-82 1377.97,-82 1655.73,-82"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="1655.85,-85.5001 1665.85,-82 1655.85,-78.5001 1655.85,-85.5001"/>
@@ -344,14 +385,14 @@
 </a>
 </g>
 <!-- http://edamontology.org/data_1008 -->
-<g id="node42" class="node"><title>http://edamontology.org/data_1008</title>
+<g id="node47" class="node"><title>http://edamontology.org/data_1008</title>
 <a xlink:href="http://edamontology.org/data_1008" xlink:title="http://edamontology.org/data_1008">
 <ellipse fill="none" stroke="black" cx="954" cy="-131" rx="131.852" ry="18"/>
 <text text-anchor="middle" x="954" y="-128.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://edamontology.org/data_1008</text>
 </a>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID&#45;&gt;http://edamontology.org/data_1008 -->
-<g id="edge34" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID&#45;&gt;http://edamontology.org/data_1008</title>
+<g id="edge38" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/AUTH_ASYM_ID&#45;&gt;http://edamontology.org/data_1008</title>
 <a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type">
 <path fill="none" stroke="darkgreen" d="M344.397,-92.0045C485.662,-101.041 691.15,-114.186 823.704,-122.665"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="823.71,-126.173 833.913,-123.318 824.157,-119.187 823.71,-126.173"/>
@@ -361,14 +402,14 @@
 </a>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/CHAIN -->
-<g id="node43" class="node"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN</title>
+<g id="node48" class="node"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN</title>
 <a xlink:href="http://utprot.net/pdb/PDB/auth_asym/CHAIN" xlink:title="http://utprot.net/pdb/PDB/auth_asym/CHAIN">
 <ellipse fill="none" stroke="black" cx="188" cy="-622" rx="161.899" ry="18"/>
 <text text-anchor="middle" x="188" y="-619.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://utprot.net/pdb/PDB/auth_asym/CHAIN</text>
 </a>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;http://rdf.wwpdb.org/pdb/PDB -->
-<g id="edge52" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;http://rdf.wwpdb.org/pdb/PDB</title>
+<g id="edge56" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;http://rdf.wwpdb.org/pdb/PDB</title>
 <a xlink:href="http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock" xlink:title="http://rdf.wwpdb.org/schema/pdbx&#45;v40.owl#of_datablock">
 <path fill="none" stroke="darkgreen" d="M200.856,-603.957C230.465,-563.631 307.595,-465.398 394,-410 613.5,-269.27 1411.96,-137.81 1686.52,-95.8531"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="1687.1,-99.3055 1696.46,-94.3388 1686.04,-92.3854 1687.1,-99.3055"/>
@@ -378,7 +419,7 @@
 </a>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;http://edamontology.org/data_1008 -->
-<g id="edge54" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;http://edamontology.org/data_1008</title>
+<g id="edge58" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;http://edamontology.org/data_1008</title>
 <a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type">
 <path fill="none" stroke="darkgreen" d="M189.585,-603.554C196.872,-531.495 234.028,-267.578 394,-158 411.066,-146.31 652.462,-138.239 812.692,-134.135"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="813.218,-137.623 823.126,-133.871 813.04,-130.625 813.218,-137.623"/>
@@ -388,12 +429,12 @@
 </a>
 </g>
 <!-- genid:Ugenid14359f006b1b01316ae8406c8fb9222b -->
-<g id="node45" class="node"><title>genid:Ugenid14359f006b1b01316ae8406c8fb9222b</title>
+<g id="node50" class="node"><title>genid:Ugenid14359f006b1b01316ae8406c8fb9222b</title>
 <ellipse fill="none" stroke="black" cx="954" cy="-902" rx="172.98" ry="18"/>
 <text text-anchor="middle" x="954" y="-899.5" font-family="Courier,monospace" font-size="10.00" fill="blue">genid:Ugenid14359f006b1b01316ae8406c8fb9222b</text>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenid14359f006b1b01316ae8406c8fb9222b -->
-<g id="edge36" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenid14359f006b1b01316ae8406c8fb9222b</title>
+<g id="edge40" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenid14359f006b1b01316ae8406c8fb9222b</title>
 <a xlink:href="http://purl.org/dc/terms/identifier" xlink:title="http://purl.org/dc/terms/identifier">
 <path fill="none" stroke="darkgreen" d="M201.332,-640.171C231.037,-679.146 306.938,-770.662 394,-813 511.517,-870.148 657.731,-891.96 771.284,-899.716"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="771.268,-903.222 781.475,-900.38 771.724,-896.237 771.268,-903.222"/>
@@ -403,12 +444,12 @@
 </a>
 </g>
 <!-- genid:Ugenid44740a30707f0131e7ed406c8fb9222b -->
-<g id="node47" class="node"><title>genid:Ugenid44740a30707f0131e7ed406c8fb9222b</title>
+<g id="node52" class="node"><title>genid:Ugenid44740a30707f0131e7ed406c8fb9222b</title>
 <ellipse fill="none" stroke="black" cx="954" cy="-650" rx="172.98" ry="18"/>
 <text text-anchor="middle" x="954" y="-647.5" font-family="Courier,monospace" font-size="10.00" fill="blue">genid:Ugenid44740a30707f0131e7ed406c8fb9222b</text>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenid44740a30707f0131e7ed406c8fb9222b -->
-<g id="edge38" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenid44740a30707f0131e7ed406c8fb9222b</title>
+<g id="edge42" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenid44740a30707f0131e7ed406c8fb9222b</title>
 <a xlink:href="http://purl.org/dc/terms/identifier" xlink:title="http://purl.org/dc/terms/identifier">
 <path fill="none" stroke="darkgreen" d="M342.09,-627.633C468.869,-632.267 648.505,-638.833 780.356,-643.653"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="780.44,-647.158 790.562,-644.026 780.696,-640.163 780.44,-647.158"/>
@@ -418,12 +459,12 @@
 </a>
 </g>
 <!-- genid:Ugenid8b688ea06a8501316acf406c8fb9222b -->
-<g id="node49" class="node"><title>genid:Ugenid8b688ea06a8501316acf406c8fb9222b</title>
+<g id="node54" class="node"><title>genid:Ugenid8b688ea06a8501316acf406c8fb9222b</title>
 <ellipse fill="none" stroke="black" cx="954" cy="-542" rx="172.98" ry="18"/>
 <text text-anchor="middle" x="954" y="-539.5" font-family="Courier,monospace" font-size="10.00" fill="blue">genid:Ugenid8b688ea06a8501316acf406c8fb9222b</text>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenid8b688ea06a8501316acf406c8fb9222b -->
-<g id="edge40" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenid8b688ea06a8501316acf406c8fb9222b</title>
+<g id="edge44" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenid8b688ea06a8501316acf406c8fb9222b</title>
 <a xlink:href="http://purl.org/dc/terms/identifier" xlink:title="http://purl.org/dc/terms/identifier">
 <path fill="none" stroke="darkgreen" d="M262.045,-605.865C301.119,-597.888 349.968,-588.761 394,-583 524.171,-565.969 672.36,-555.511 783.586,-549.422"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="784.097,-552.9 793.893,-548.865 783.719,-545.91 784.097,-552.9"/>
@@ -433,12 +474,12 @@
 </a>
 </g>
 <!-- genid:Ugenidb926a1d0698201316acf406c8fb9222b -->
-<g id="node51" class="node"><title>genid:Ugenidb926a1d0698201316acf406c8fb9222b</title>
+<g id="node56" class="node"><title>genid:Ugenidb926a1d0698201316acf406c8fb9222b</title>
 <ellipse fill="none" stroke="black" cx="954" cy="-326" rx="172.98" ry="18"/>
 <text text-anchor="middle" x="954" y="-323.5" font-family="Courier,monospace" font-size="10.00" fill="blue">genid:Ugenidb926a1d0698201316acf406c8fb9222b</text>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenidb926a1d0698201316acf406c8fb9222b -->
-<g id="edge42" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenidb926a1d0698201316acf406c8fb9222b</title>
+<g id="edge46" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenidb926a1d0698201316acf406c8fb9222b</title>
 <a xlink:href="http://purl.org/dc/terms/identifier" xlink:title="http://purl.org/dc/terms/identifier">
 <path fill="none" stroke="darkgreen" d="M228.858,-604.422C270.293,-586.72 336.349,-558.835 394,-536 576.364,-463.769 794.52,-383.79 896.345,-346.828"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="897.623,-350.088 905.83,-343.388 895.236,-343.507 897.623,-350.088"/>
@@ -448,12 +489,12 @@
 </a>
 </g>
 <!-- genid:Ugeniddda6df80697d01316acf406c8fb9222b -->
-<g id="node53" class="node"><title>genid:Ugeniddda6df80697d01316acf406c8fb9222b</title>
+<g id="node58" class="node"><title>genid:Ugeniddda6df80697d01316acf406c8fb9222b</title>
 <ellipse fill="none" stroke="black" cx="954" cy="-596" rx="172.98" ry="18"/>
 <text text-anchor="middle" x="954" y="-593.5" font-family="Courier,monospace" font-size="10.00" fill="blue">genid:Ugeniddda6df80697d01316acf406c8fb9222b</text>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugeniddda6df80697d01316acf406c8fb9222b -->
-<g id="edge44" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugeniddda6df80697d01316acf406c8fb9222b</title>
+<g id="edge48" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugeniddda6df80697d01316acf406c8fb9222b</title>
 <a xlink:href="http://purl.org/dc/terms/identifier" xlink:title="http://purl.org/dc/terms/identifier">
 <path fill="none" stroke="darkgreen" d="M329.256,-613.149C350.934,-611.971 373.061,-610.871 394,-610 520.5,-604.736 663.162,-601.205 772.834,-599.006"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="773.078,-602.502 783.007,-598.804 772.939,-595.504 773.078,-602.502"/>
@@ -463,12 +504,12 @@
 </a>
 </g>
 <!-- genid:Ugenidf91d1850697c01316acf406c8fb9222b -->
-<g id="node55" class="node"><title>genid:Ugenidf91d1850697c01316acf406c8fb9222b</title>
+<g id="node60" class="node"><title>genid:Ugenidf91d1850697c01316acf406c8fb9222b</title>
 <ellipse fill="none" stroke="black" cx="954" cy="-821" rx="172.98" ry="18"/>
 <text text-anchor="middle" x="954" y="-818.5" font-family="Courier,monospace" font-size="10.00" fill="blue">genid:Ugenidf91d1850697c01316acf406c8fb9222b</text>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenidf91d1850697c01316acf406c8fb9222b -->
-<g id="edge46" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenidf91d1850697c01316acf406c8fb9222b</title>
+<g id="edge50" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenidf91d1850697c01316acf406c8fb9222b</title>
 <a xlink:href="http://purl.org/dc/terms/identifier" xlink:title="http://purl.org/dc/terms/identifier">
 <path fill="none" stroke="darkgreen" d="M217.214,-639.859C256.135,-662.843 327.801,-702.383 394,-724 532.848,-769.341 698.367,-794.679 813.286,-807.987"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="813.218,-811.502 823.55,-809.16 814.012,-804.547 813.218,-811.502"/>
@@ -478,12 +519,12 @@
 </a>
 </g>
 <!-- genid:Ugenidfa1865c06a8801316acf406c8fb9222b -->
-<g id="node57" class="node"><title>genid:Ugenidfa1865c06a8801316acf406c8fb9222b</title>
+<g id="node62" class="node"><title>genid:Ugenidfa1865c06a8801316acf406c8fb9222b</title>
 <ellipse fill="none" stroke="black" cx="954" cy="-744" rx="172.98" ry="18"/>
 <text text-anchor="middle" x="954" y="-741.5" font-family="Courier,monospace" font-size="10.00" fill="blue">genid:Ugenidfa1865c06a8801316acf406c8fb9222b</text>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenidfa1865c06a8801316acf406c8fb9222b -->
-<g id="edge48" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenidfa1865c06a8801316acf406c8fb9222b</title>
+<g id="edge52" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenidfa1865c06a8801316acf406c8fb9222b</title>
 <a xlink:href="http://purl.org/dc/terms/identifier" xlink:title="http://purl.org/dc/terms/identifier">
 <path fill="none" stroke="darkgreen" d="M275.664,-637.176C312.228,-643.433 355.15,-650.682 394,-657 550.956,-682.524 732.936,-710.497 845.782,-727.652"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="845.396,-731.134 855.808,-729.176 846.447,-724.213 845.396,-731.134"/>
@@ -493,12 +534,12 @@
 </a>
 </g>
 <!-- genid:Ugenidffa55f806ba701316ae9406c8fb9222b -->
-<g id="node59" class="node"><title>genid:Ugenidffa55f806ba701316ae9406c8fb9222b</title>
+<g id="node64" class="node"><title>genid:Ugenidffa55f806ba701316ae9406c8fb9222b</title>
 <ellipse fill="none" stroke="black" cx="954" cy="-1100" rx="172.98" ry="18"/>
 <text text-anchor="middle" x="954" y="-1097.5" font-family="Courier,monospace" font-size="10.00" fill="blue">genid:Ugenidffa55f806ba701316ae9406c8fb9222b</text>
 </g>
 <!-- http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenidffa55f806ba701316ae9406c8fb9222b -->
-<g id="edge50" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenidffa55f806ba701316ae9406c8fb9222b</title>
+<g id="edge54" class="edge"><title>http://utprot.net/pdb/PDB/auth_asym/CHAIN&#45;&gt;genid:Ugenidffa55f806ba701316ae9406c8fb9222b</title>
 <a xlink:href="http://purl.org/dc/terms/identifier" xlink:title="http://purl.org/dc/terms/identifier">
 <path fill="none" stroke="darkgreen" d="M195.966,-640.321C218.985,-691.154 290.607,-835.256 394,-912 529.364,-1012.47 721.78,-1061.43 842.17,-1083.6"/>
 <polygon fill="darkgreen" stroke="darkgreen" points="841.686,-1087.07 852.15,-1085.41 842.934,-1080.18 841.686,-1087.07"/>
@@ -544,18 +585,11 @@
 <text text-anchor="middle" x="1363" y="-655" font-family="Courier,monospace" font-size="10.00" fill="red">http://edamontology.org/has_identifier</text>
 </a>
 </g>
-<!-- http://www.uniprot.org/uniprot/SP_PRIMARY -->
-<g id="node65" class="node"><title>http://www.uniprot.org/uniprot/SP_PRIMARY</title>
-<a xlink:href="http://www.uniprot.org/uniprot/SP_PRIMARY" xlink:title="http://www.uniprot.org/uniprot/SP_PRIMARY">
-<ellipse fill="none" stroke="black" cx="1780" cy="-799" rx="161.899" ry="18"/>
-<text text-anchor="middle" x="1780" y="-796.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://www.uniprot.org/uniprot/SP_PRIMARY</text>
-</a>
-</g>
-<!-- genid:Ugenid44740a30707f0131e7ed406c8fb9222b&#45;&gt;http://www.uniprot.org/uniprot/SP_PRIMARY -->
-<g id="edge68" class="edge"><title>genid:Ugenid44740a30707f0131e7ed406c8fb9222b&#45;&gt;http://www.uniprot.org/uniprot/SP_PRIMARY</title>
+<!-- genid:Ugenid44740a30707f0131e7ed406c8fb9222b&#45;&gt;http://purl.uniprot.org/uniprot/SP_PRIMARY -->
+<g id="edge68" class="edge"><title>genid:Ugenid44740a30707f0131e7ed406c8fb9222b&#45;&gt;http://purl.uniprot.org/uniprot/SP_PRIMARY</title>
 <a xlink:href="http://edamontology.org/has_identifier" xlink:title="http://edamontology.org/has_identifier">
-<path fill="none" stroke="darkgreen" d="M1035.65,-665.898C1076.33,-676.267 1125.03,-692.531 1164,-717 1173.85,-723.185 1171.44,-731.125 1182,-736 1255.14,-769.759 1464.01,-745.486 1544,-755 1595.27,-761.098 1652.18,-771.598 1697.27,-780.811"/>
-<polygon fill="darkgreen" stroke="darkgreen" points="1696.79,-784.285 1707.29,-782.877 1698.21,-777.43 1696.79,-784.285"/>
+<path fill="none" stroke="darkgreen" d="M1035.65,-665.898C1076.33,-676.267 1125.03,-692.531 1164,-717 1173.85,-723.185 1171.44,-731.125 1182,-736 1255.14,-769.759 1464.01,-745.486 1544,-755 1595.17,-761.086 1651.97,-771.558 1697.02,-780.759"/>
+<polygon fill="darkgreen" stroke="darkgreen" points="1696.53,-784.232 1707.03,-782.822 1697.94,-777.376 1696.53,-784.232"/>
 </a>
 <a xlink:href="http://edamontology.org/has_identifier" xlink:title="http://edamontology.org/has_identifier">
 <text text-anchor="middle" x="1363" y="-759" font-family="Courier,monospace" font-size="10.00" fill="red">http://edamontology.org/has_identifier</text>
@@ -616,11 +650,11 @@
 <text text-anchor="middle" x="1363" y="-223" font-family="Courier,monospace" font-size="10.00" fill="red">http://edamontology.org/has_identifier</text>
 </a>
 </g>
-<!-- genid:Ugenidb926a1d0698201316acf406c8fb9222b&#45;&gt;http://www.uniprot.org/uniprot/SP_PRIMARY -->
-<g id="edge84" class="edge"><title>genid:Ugenidb926a1d0698201316acf406c8fb9222b&#45;&gt;http://www.uniprot.org/uniprot/SP_PRIMARY</title>
+<!-- genid:Ugenidb926a1d0698201316acf406c8fb9222b&#45;&gt;http://purl.uniprot.org/uniprot/SP_PRIMARY -->
+<g id="edge84" class="edge"><title>genid:Ugenidb926a1d0698201316acf406c8fb9222b&#45;&gt;http://purl.uniprot.org/uniprot/SP_PRIMARY</title>
 <a xlink:href="http://edamontology.org/has_identifier" xlink:title="http://edamontology.org/has_identifier">
-<path fill="none" stroke="darkgreen" d="M978.779,-343.926C1019.07,-371.961 1102.34,-425.318 1182,-448 1220.76,-459.037 1515.45,-442.549 1544,-471 1586.43,-513.292 1524.02,-693.666 1562,-740 1580.45,-762.514 1606.54,-776.931 1634.28,-786.055"/>
-<polygon fill="darkgreen" stroke="darkgreen" points="1633.57,-789.496 1644.15,-789.066 1635.61,-782.8 1633.57,-789.496"/>
+<path fill="none" stroke="darkgreen" d="M978.779,-343.926C1019.07,-371.961 1102.34,-425.318 1182,-448 1220.76,-459.037 1515.45,-442.549 1544,-471 1586.43,-513.292 1524.02,-693.666 1562,-740 1580.29,-762.31 1606.07,-776.67 1633.53,-785.806"/>
+<polygon fill="darkgreen" stroke="darkgreen" points="1632.72,-789.218 1643.3,-788.824 1634.78,-782.529 1632.72,-789.218"/>
 </a>
 <a xlink:href="http://edamontology.org/has_identifier" xlink:title="http://edamontology.org/has_identifier">
 <text text-anchor="middle" x="1363" y="-475" font-family="Courier,monospace" font-size="10.00" fill="red">http://edamontology.org/has_identifier</text>
@@ -693,18 +727,11 @@
 <text text-anchor="middle" x="1363" y="-439" font-family="Courier,monospace" font-size="10.00" fill="red">http://edamontology.org/has_identifier</text>
 </a>
 </g>
-<!-- http://www.uniprot.org/uniprot/ACCESSION -->
-<g id="node62" class="node"><title>http://www.uniprot.org/uniprot/ACCESSION</title>
-<a xlink:href="http://www.uniprot.org/uniprot/ACCESSION" xlink:title="http://www.uniprot.org/uniprot/ACCESSION">
-<ellipse fill="none" stroke="black" cx="1780" cy="-602" rx="158.206" ry="18"/>
-<text text-anchor="middle" x="1780" y="-599.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://www.uniprot.org/uniprot/ACCESSION</text>
-</a>
-</g>
-<!-- genid:Ugeniddda6df80697d01316acf406c8fb9222b&#45;&gt;http://www.uniprot.org/uniprot/ACCESSION -->
-<g id="edge100" class="edge"><title>genid:Ugeniddda6df80697d01316acf406c8fb9222b&#45;&gt;http://www.uniprot.org/uniprot/ACCESSION</title>
+<!-- genid:Ugeniddda6df80697d01316acf406c8fb9222b&#45;&gt;http://purl.uniprot.org/uniprot/ACCESSION -->
+<g id="edge100" class="edge"><title>genid:Ugeniddda6df80697d01316acf406c8fb9222b&#45;&gt;http://purl.uniprot.org/uniprot/ACCESSION</title>
 <a xlink:href="http://edamontology.org/has_identifier" xlink:title="http://edamontology.org/has_identifier">
-<path fill="none" stroke="darkgreen" d="M1123.54,-592.282C1138.26,-586.779 1152.06,-579.22 1164,-569 1185.8,-550.339 1159.06,-524.23 1182,-507 1214.16,-482.847 1512.13,-482.466 1544,-507 1568.77,-526.069 1538.45,-554.441 1562,-575 1577.56,-588.578 1596.28,-597.62 1616.14,-603.438"/>
-<polygon fill="darkgreen" stroke="darkgreen" points="1615.41,-606.865 1625.97,-606.041 1617.2,-600.098 1615.41,-606.865"/>
+<path fill="none" stroke="darkgreen" d="M1123.54,-592.282C1138.26,-586.779 1152.06,-579.22 1164,-569 1185.8,-550.339 1159.06,-524.23 1182,-507 1214.16,-482.847 1512.13,-482.466 1544,-507 1568.77,-526.069 1538.45,-554.441 1562,-575 1575.82,-587.061 1592.14,-595.543 1609.53,-601.366"/>
+<polygon fill="darkgreen" stroke="darkgreen" points="1608.71,-604.775 1619.3,-604.333 1610.75,-598.077 1608.71,-604.775"/>
 </a>
 <a xlink:href="http://edamontology.org/has_identifier" xlink:title="http://edamontology.org/has_identifier">
 <text text-anchor="middle" x="1363" y="-511" font-family="Courier,monospace" font-size="10.00" fill="red">http://edamontology.org/has_identifier</text>
@@ -730,11 +757,11 @@
 <text text-anchor="middle" x="1363" y="-974" font-family="Courier,monospace" font-size="10.00" fill="red">http://edamontology.org/has_identifier</text>
 </a>
 </g>
-<!-- genid:Ugenidf91d1850697c01316acf406c8fb9222b&#45;&gt;http://www.uniprot.org/uniprot/SP_PRIMARY -->
-<g id="edge106" class="edge"><title>genid:Ugenidf91d1850697c01316acf406c8fb9222b&#45;&gt;http://www.uniprot.org/uniprot/SP_PRIMARY</title>
+<!-- genid:Ugenidf91d1850697c01316acf406c8fb9222b&#45;&gt;http://purl.uniprot.org/uniprot/SP_PRIMARY -->
+<g id="edge106" class="edge"><title>genid:Ugenidf91d1850697c01316acf406c8fb9222b&#45;&gt;http://purl.uniprot.org/uniprot/SP_PRIMARY</title>
 <a xlink:href="http://edamontology.org/has_identifier" xlink:title="http://edamontology.org/has_identifier">
-<path fill="none" stroke="darkgreen" d="M1068.73,-834.482C1187.81,-846.364 1379.31,-859.561 1544,-844 1597.39,-838.956 1656.67,-827.628 1702.47,-817.601"/>
-<polygon fill="darkgreen" stroke="darkgreen" points="1703.32,-820.998 1712.33,-815.417 1701.81,-814.163 1703.32,-820.998"/>
+<path fill="none" stroke="darkgreen" d="M1068.73,-834.482C1187.81,-846.364 1379.31,-859.561 1544,-844 1597.29,-838.965 1656.46,-827.669 1702.22,-817.655"/>
+<polygon fill="darkgreen" stroke="darkgreen" points="1703.06,-821.054 1712.07,-815.475 1701.55,-814.219 1703.06,-821.054"/>
 </a>
 <a xlink:href="http://edamontology.org/has_identifier" xlink:title="http://edamontology.org/has_identifier">
 <text text-anchor="middle" x="1363" y="-855" font-family="Courier,monospace" font-size="10.00" fill="red">http://edamontology.org/has_identifier</text>
@@ -760,11 +787,11 @@
 <text text-anchor="middle" x="1363" y="-932" font-family="Courier,monospace" font-size="10.00" fill="red">http://edamontology.org/has_identifier</text>
 </a>
 </g>
-<!-- genid:Ugenidfa1865c06a8801316acf406c8fb9222b&#45;&gt;http://www.uniprot.org/uniprot/SP_PRIMARY -->
-<g id="edge112" class="edge"><title>genid:Ugenidfa1865c06a8801316acf406c8fb9222b&#45;&gt;http://www.uniprot.org/uniprot/SP_PRIMARY</title>
+<!-- genid:Ugenidfa1865c06a8801316acf406c8fb9222b&#45;&gt;http://purl.uniprot.org/uniprot/SP_PRIMARY -->
+<g id="edge112" class="edge"><title>genid:Ugenidfa1865c06a8801316acf406c8fb9222b&#45;&gt;http://purl.uniprot.org/uniprot/SP_PRIMARY</title>
 <a xlink:href="http://edamontology.org/has_identifier" xlink:title="http://edamontology.org/has_identifier">
-<path fill="none" stroke="darkgreen" d="M1053.93,-758.727C1089.79,-766.332 1129.79,-777.584 1164,-794 1173.14,-798.385 1172.41,-804.711 1182,-808 1258.09,-834.107 1463.57,-809.533 1544,-808 1568.34,-807.536 1594.08,-806.803 1619.27,-805.951"/>
-<polygon fill="darkgreen" stroke="darkgreen" points="1619.39,-809.449 1629.26,-805.606 1619.15,-802.453 1619.39,-809.449"/>
+<path fill="none" stroke="darkgreen" d="M1053.93,-758.727C1089.79,-766.332 1129.79,-777.584 1164,-794 1173.14,-798.385 1172.41,-804.711 1182,-808 1258.09,-834.107 1463.57,-809.533 1544,-808 1567.23,-807.557 1591.73,-806.87 1615.81,-806.067"/>
+<polygon fill="darkgreen" stroke="darkgreen" points="1616.22,-809.555 1626.1,-805.717 1615.99,-802.559 1616.22,-809.555"/>
 </a>
 <a xlink:href="http://edamontology.org/has_identifier" xlink:title="http://edamontology.org/has_identifier">
 <text text-anchor="middle" x="1363" y="-823" font-family="Courier,monospace" font-size="10.00" fill="red">http://edamontology.org/has_identifier</text>
@@ -780,11 +807,11 @@
 <text text-anchor="middle" x="1363" y="-727" font-family="Courier,monospace" font-size="10.00" fill="red">http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type</text>
 </a>
 </g>
-<!-- genid:Ugenidffa55f806ba701316ae9406c8fb9222b&#45;&gt;http://www.uniprot.org/uniprot/SP_PRIMARY -->
-<g id="edge122" class="edge"><title>genid:Ugenidffa55f806ba701316ae9406c8fb9222b&#45;&gt;http://www.uniprot.org/uniprot/SP_PRIMARY</title>
+<!-- genid:Ugenidffa55f806ba701316ae9406c8fb9222b&#45;&gt;http://purl.uniprot.org/uniprot/SP_PRIMARY -->
+<g id="edge122" class="edge"><title>genid:Ugenidffa55f806ba701316ae9406c8fb9222b&#45;&gt;http://purl.uniprot.org/uniprot/SP_PRIMARY</title>
 <a xlink:href="http://edamontology.org/has_identifier" xlink:title="http://edamontology.org/has_identifier">
-<path fill="none" stroke="darkgreen" d="M1109.04,-1091.93C1281.23,-1082.61 1536.24,-1067.58 1544,-1060 1575.6,-1029.12 1533.87,-896.073 1562,-862 1582.14,-837.6 1611.1,-822.309 1641.36,-812.813"/>
-<polygon fill="darkgreen" stroke="darkgreen" points="1642.6,-816.096 1651.22,-809.93 1640.64,-809.377 1642.6,-816.096"/>
+<path fill="none" stroke="darkgreen" d="M1109.04,-1091.93C1281.23,-1082.61 1536.24,-1067.58 1544,-1060 1575.6,-1029.12 1533.87,-896.073 1562,-862 1581.91,-837.875 1610.45,-822.654 1640.34,-813.136"/>
+<polygon fill="darkgreen" stroke="darkgreen" points="1641.49,-816.444 1650.08,-810.242 1639.5,-809.734 1641.49,-816.444"/>
 </a>
 <a xlink:href="http://edamontology.org/has_identifier" xlink:title="http://edamontology.org/has_identifier">
 <text text-anchor="middle" x="1363" y="-1091" font-family="Courier,monospace" font-size="10.00" fill="red">http://edamontology.org/has_identifier</text>
@@ -843,33 +870,6 @@
 </a>
 <a xlink:href="http://biohackathon.org/resource/faldo#location" xlink:title="http://biohackathon.org/resource/faldo#location">
 <text text-anchor="middle" x="1363" y="-1218" font-family="Courier,monospace" font-size="10.00" fill="red">http://biohackathon.org/resource/faldo#location</text>
-</a>
-</g>
-<!-- http://purl.uniprot.org/core/Protein -->
-<g id="node64" class="node"><title>http://purl.uniprot.org/core/Protein</title>
-<a xlink:href="http://purl.uniprot.org/core/Protein" xlink:title="http://purl.uniprot.org/core/Protein">
-<ellipse fill="none" stroke="black" cx="2587" cy="-602" rx="142.932" ry="18"/>
-<text text-anchor="middle" x="2587" y="-599.5" font-family="Courier,monospace" font-size="10.00" fill="blue">http://purl.uniprot.org/core/Protein</text>
-</a>
-</g>
-<!-- http://www.uniprot.org/uniprot/ACCESSION&#45;&gt;http://purl.uniprot.org/core/Protein -->
-<g id="edge56" class="edge"><title>http://www.uniprot.org/uniprot/ACCESSION&#45;&gt;http://purl.uniprot.org/core/Protein</title>
-<a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type">
-<path fill="none" stroke="darkgreen" d="M1938.47,-602C2081.81,-602 2291.53,-602 2433.35,-602"/>
-<polygon fill="darkgreen" stroke="darkgreen" points="2433.44,-605.5 2443.44,-602 2433.44,-598.5 2433.44,-605.5"/>
-</a>
-<a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type">
-<text text-anchor="middle" x="2158" y="-606" font-family="Courier,monospace" font-size="10.00" fill="red">http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type</text>
-</a>
-</g>
-<!-- http://www.uniprot.org/uniprot/SP_PRIMARY&#45;&gt;http://purl.uniprot.org/core/Protein -->
-<g id="edge58" class="edge"><title>http://www.uniprot.org/uniprot/SP_PRIMARY&#45;&gt;http://purl.uniprot.org/core/Protein</title>
-<a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type">
-<path fill="none" stroke="darkgreen" d="M1941.3,-797.181C2053.81,-787.778 2200.95,-758.157 2300,-673 2316.02,-659.226 2301.07,-641.639 2318,-629 2363.76,-594.841 2426.78,-587.051 2480.32,-588.282"/>
-<polygon fill="darkgreen" stroke="darkgreen" points="2480.43,-591.788 2490.54,-588.628 2480.67,-584.792 2480.43,-591.788"/>
-</a>
-<a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type">
-<text text-anchor="middle" x="2158" y="-790" font-family="Courier,monospace" font-size="10.00" fill="red">http://www.w3.org/1999/02/22&#45;rdf&#45;syntax&#45;ns#type</text>
 </a>
 </g>
 <!-- http://edamontology.org/data_1039 -->

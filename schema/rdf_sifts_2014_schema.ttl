@@ -25,6 +25,12 @@
     a <http://edamontology.org/data_1179> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "SCIENTIFIC_NAME" .
 
+<http://purl.uniprot.org/uniprot/ACCESSION>
+    a <http://purl.uniprot.org/core/Protein> .
+
+<http://purl.uniprot.org/uniprot/SP_PRIMARY>
+    a <http://purl.uniprot.org/core/Protein> .
+
 <http://rdf.wwpdb.org/pdb/PDB>
     <http://purl.org/dc/terms/identifier> [
         <http://rdf.wwpdb.org/schema/pdbx-v40.owl#citation.id> <http://rdf.wwpdb.org/pdb/PDB/citation/primary>
@@ -48,7 +54,7 @@
         <http://edamontology.org/has_identifier> <http://info.identifiers.org/taxonomy/TAX_ID> ;
         a <http://edamontology.org/data_0954>
     ], [
-        <http://edamontology.org/has_identifier> <http://info.identifiers.org/scop/SUNID>, <http://www.uniprot.org/uniprot/SP_PRIMARY>, [
+        <http://edamontology.org/has_identifier> <http://info.identifiers.org/scop/SUNID>, <http://purl.uniprot.org/uniprot/SP_PRIMARY>, [
             a <http://edamontology.org/data_1039> ;
             <http://www.w3.org/2000/01/rdf-schema#label> "SCOP_ID"
         ] ;
@@ -57,7 +63,7 @@
         <http://edamontology.org/has_identifier> <http://info.identifiers.org/interpro/INTERPRO_ID> ;
         a <http://edamontology.org/data_0954>
     ], [
-        <http://edamontology.org/has_identifier> <http://info.identifiers.org/go/GO_ID>, <http://www.uniprot.org/uniprot/SP_PRIMARY> ;
+        <http://edamontology.org/has_identifier> <http://info.identifiers.org/go/GO_ID>, <http://purl.uniprot.org/uniprot/SP_PRIMARY> ;
         <http://www.biopax.org/release/biopax-level3.owl#evidenceCode> [
             a <http://www.biopax.org/release/biopax-level3.owl#EvidenceCodeVocabulary> ;
             <http://www.w3.org/2000/01/rdf-schema#label> "GO_ID"
@@ -65,13 +71,13 @@
         a <http://edamontology.org/data_0954>, <http://www.biopax.org/release/biopax-level3.owl#Evidence> ;
         <http://www.w3.org/2000/01/rdf-schema#comment> "WITH_STRING"
     ], [
-        <http://edamontology.org/has_identifier> <http://info.identifiers.org/ec-code/EC_NUMBER>, <http://www.uniprot.org/uniprot/ACCESSION> ;
+        <http://edamontology.org/has_identifier> <http://info.identifiers.org/ec-code/EC_NUMBER>, <http://purl.uniprot.org/uniprot/ACCESSION> ;
         a <http://edamontology.org/data_0954>
     ], [
-        <http://edamontology.org/has_identifier> <http://info.identifiers.org/cath.domain/CATH_ID>, <http://www.uniprot.org/uniprot/SP_PRIMARY> ;
+        <http://edamontology.org/has_identifier> <http://info.identifiers.org/cath.domain/CATH_ID>, <http://purl.uniprot.org/uniprot/SP_PRIMARY> ;
         a <http://edamontology.org/data_0954>
     ], [
-        <http://edamontology.org/has_identifier> <http://info.identifiers.org/pfam/PFAM_ID>, <http://www.uniprot.org/uniprot/SP_PRIMARY> ;
+        <http://edamontology.org/has_identifier> <http://info.identifiers.org/pfam/PFAM_ID>, <http://purl.uniprot.org/uniprot/SP_PRIMARY> ;
         a <http://edamontology.org/data_0954>
     ], [
         <http://biohackathon.org/resource/faldo#location> [
@@ -105,15 +111,9 @@
             ] ;
             a <http://biohackathon.org/resource/faldo#Region>, <http://edamontology.org/format_1950>
         ] ;
-        <http://edamontology.org/has_identifier> <http://www.uniprot.org/uniprot/SP_PRIMARY> ;
+        <http://edamontology.org/has_identifier> <http://purl.uniprot.org/uniprot/SP_PRIMARY> ;
         a <http://edamontology.org/data_0954>
     ] ;
     <http://rdf.wwpdb.org/schema/pdbx-v40.owl#of_datablock> <http://rdf.wwpdb.org/pdb/PDB> ;
     a <http://edamontology.org/data_1008> .
-
-<http://www.uniprot.org/uniprot/ACCESSION>
-    a <http://purl.uniprot.org/core/Protein> .
-
-<http://www.uniprot.org/uniprot/SP_PRIMARY>
-    a <http://purl.uniprot.org/core/Protein> .
 
