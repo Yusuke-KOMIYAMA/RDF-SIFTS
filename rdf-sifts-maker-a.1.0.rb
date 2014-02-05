@@ -76,7 +76,7 @@ class RDFSIFTS
           pdb_resource = ut.to_s + "pdb/" + row0.to_s + "/auth_asym/" + row1.to_s
           root_uri = RDF::URI.new(pdb_resource)
 
-          pdb_top = ut.to_s + row0.to_s
+          pdb_top = pdbr.to_s + row0.to_s
           pdb_top_uri = RDF::URI.new(pdb_top)
 
           uniprotac = upr.to_s + row2.to_s
