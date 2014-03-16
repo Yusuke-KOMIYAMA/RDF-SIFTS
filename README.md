@@ -1,11 +1,9 @@
-RDF-SIFTS maker
+# RDF-SIFTS maker (beta 1.0)
 =========
 
+##Usage: rdf-sifts-maker.rb [options]  
 
-
-Usage: rdf-sifts-maker.rb [options]
-
-Specific options:
+    Specific options:  
     -f, --full                       Download SIFTS from EBI and convert to all RDF-SIFTS.
     -r, --run                        Convert to all RDF-SIFTS.
     -d, --download                   Download all RDF-SIFTS from EBI.
@@ -37,6 +35,5 @@ Specific options:
         --scop-convert               Convert to the RDF-SIFTS SCOP.
         --taxonomy-convert           Convert to the RDF-SIFTS Taxonomy.
         --uniprot-convert            Convert to the RDF-SIFTS UniProt.
-
-Common options:
+    Common options:
     -h, --help                       Show this message
