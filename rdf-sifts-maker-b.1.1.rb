@@ -1,10 +1,10 @@
 #! /usr/bin/ruby
 ## -*- cofing:utf-8 -*-
 #
-#  『RDF-SIFTS Maker』alpha version 0.8
+#  RDF-SIFTS "Maker"alpha version 0.8
 #   by Yusuke Komiyama
 #
-#  開発に使用したrubyのバージョン
+#  Development environment for RDF-SIFTS
 #  ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-darwin11.4.0]
 #
 require 'rdf' 
@@ -18,16 +18,16 @@ include RDF
 
 class RDFSIFTS
 #########################################################
-#    『RDF-SIFTS』クラス
+#    Class of "RDF-SIFTS"
 #########################################################
 
   def scopGet
   #########################################################
-  #    『RDF-SIFTS scopGet』メソッド
+  #    Method of RDF-SIFTS "scopGet"
   #########################################################
 #=begin
     #########################################################
-    #    FTPを用いてEBIから最新のSIFTSデータを取得
+    #    Fetch the latest data of SIFTS from EBI using FTP.
     #########################################################
     print "The obtain of the latest SIFTS SCOP from EBI "
     ftp = Net::FTP.new('ftp.ebi.ac.uk')
@@ -43,12 +43,12 @@ class RDFSIFTS
 
   def scopConvert
   #########################################################
-  #    『RDF-SIFTS scopConvert』メソッド
+  #    Method of RDF-SIFTS "scopConvert"
   #########################################################
 
 #=begin
     #########################################################
-    #    RDF.rbでクラス定義されていないPREFIXの読み込み
+    #    Load the undefined Classes into prefix of SPARQL in "RDF.rb".
     #########################################################
     edam = RDF::Vocabulary.new("http://edamontology.org/")
     pdbo = RDF::Vocabulary.new("http://rdf.wwpdb.org/schema/pdbx-v40.owl#")
@@ -60,7 +60,7 @@ class RDFSIFTS
     ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
-    #   RDFのグラフモデルの組み立て 『RDF-SIFTS SCOP』 
+    #   Construct the graph model of RDF for "RDF-SIFTS SCOP". 
     #########################################################
     print "The transformation of RDF-SIFTS SCOP "
     RDF::Writer.open("./result/pdb_chain_scop_uniprot.nt") do |writer|
@@ -113,11 +113,11 @@ class RDFSIFTS
 
   def cathGet
   #########################################################
-  #    『RDF-SIFTS cathGet』メソッド
+  #    Method of RDF-SIFTS "cathGet"
   #########################################################
 #=begin
     #########################################################
-    #    FTPを用いてEBIから最新のSIFTSデータを取得
+    #    Fetch the latest data of SIFTS from EBI using FTP.
     #########################################################
     print "The obtain of the latest SIFTS CATH from EBI "
     ftp = Net::FTP.new('ftp.ebi.ac.uk')
@@ -133,12 +133,12 @@ class RDFSIFTS
 
   def cathConvert
   #########################################################
-  #    『RDF-SIFTS cathConvert』メソッド
+  #    Method of RDF-SIFTS "cathConvert"
   #########################################################
 
 #=begin
     #########################################################
-    #    RDF.rbでクラス定義されていないPREFIXの読み込み
+    #    Load the undefined Classes into prefix of SPARQL in "RDF.rb".
     #########################################################
     edam = RDF::Vocabulary.new("http://edamontology.org/")
     pdbo = RDF::Vocabulary.new("http://rdf.wwpdb.org/schema/pdbx-v40.owl#")
@@ -150,7 +150,7 @@ class RDFSIFTS
     ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
-    #   RDFのグラフモデルの組み立て 『RDF-SIFTS CATH』 
+    #   Construct the graph model of RDF for RDF-SIFTS "CATH" 
     #########################################################
     print "The transformation of RDF-SIFTS CATH "
     RDF::Writer.open("./result/pdb_chain_cath_uniprot.nt") do |writer|
@@ -197,11 +197,11 @@ class RDFSIFTS
 
   def pubmedGet
   #########################################################
-  #    『RDF-SIFTS pubmedGet』メソッド
+  #    Method of RDF-SIFTS "pubmedGet"
   #########################################################
 #=begin
     #########################################################
-    #    FTPを用いてEBIから最新のSIFTSデータを取得
+    #    Fetch the latest data of SIFTS from EBI using FTP.
     #########################################################
     print "The obtain of the latest SIFTS PubMed from EBI "
     ftp = Net::FTP.new('ftp.ebi.ac.uk')
@@ -217,12 +217,12 @@ class RDFSIFTS
 
   def pubmedConvert
   #########################################################
-  #    『RDF-SIFTS pubmedConvert』メソッド
+  #    Method of RDF-SIFTS "pubmedConvert"
   #########################################################
 #
 #=begin
     #########################################################
-    #    RDF.rbでクラス定義されていないPREFIXの読み込み
+    #    Load the undefined Classes into prefix of SPARQL in "RDF.rb".
     #########################################################
     edam = RDF::Vocabulary.new("http://edamontology.org/")
     pdbo = RDF::Vocabulary.new("http://rdf.wwpdb.org/schema/pdbx-v40.owl#")
@@ -232,7 +232,7 @@ class RDFSIFTS
     sio = RDF::Vocabulary.new("http://semanticscience.org/resource/")
 
     #########################################################
-    #   RDFのグラフモデルの組み立て 『RDF-SIFTS PubMed』 
+    #   Construct the graph model of RDF for RDF-SIFTS "PubMed" 
     #########################################################
     print "The transformation of RDF-SIFTS PubMed "
     RDF::Writer.open("./result/pdb_pubmed.nt") do |writer|
@@ -278,11 +278,11 @@ class RDFSIFTS
 
   def taxonomyGet
   #########################################################
-  #    『RDF-SIFTS taxonomyGet』メソッド
+  #    Method of RDF-SIFTS "taxonomyGet"
   #########################################################
 #=begin
     #########################################################
-    #    FTPを用いてEBIから最新のSIFTSデータを取得
+    #    Fetch the latest data of SIFTS from EBI using FTP.
     #########################################################
     print "The obtain of the latest SIFTS Taxonomy from EBI "
     ftp = Net::FTP.new('ftp.ebi.ac.uk')
@@ -298,12 +298,12 @@ class RDFSIFTS
 
   def taxonomyConvert
   #########################################################
-  #    『RDF-SIFTS taxonomyConvert』メソッド
+  #    Method of RDF-SIFTS "taxonomyConvert"
   #########################################################
 #
 #=begin
     #########################################################
-    #    RDF.rbでクラス定義されていないPREFIXの読み込み
+    #    Load the undefined Classes into prefix of SPARQL in "RDF.rb".
     #########################################################
     edam = RDF::Vocabulary.new("http://edamontology.org/")
     pdbo = RDF::Vocabulary.new("http://rdf.wwpdb.org/schema/pdbx-v40.owl#")
@@ -313,7 +313,7 @@ class RDFSIFTS
     ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
-    #   RDFのグラフモデルの組み立て 『RDF-SIFTS Taxonomy』 
+    #   Construct the graph model of RDF for RDF-SIFTS "Taxonomy" 
     #########################################################
     print "The transformation of RDF-SIFTS Taxonomy "
 
@@ -359,11 +359,11 @@ class RDFSIFTS
 
   def uniprotGet
   #########################################################
-  #    『RDF-SIFTS uniprotGet』メソッド
+  #    Method of RDF-SIFTS "uniprotGet"
   #########################################################
 #=begin
     #########################################################
-    #    FTPを用いてEBIから最新のSIFTSデータを取得
+    #    Fetch the latest data of SIFTS from EBI using FTP.
     #########################################################
     print "The obtain of the latest SIFTS UniProt from EBI "
     ftp = Net::FTP.new('ftp.ebi.ac.uk')
@@ -379,12 +379,12 @@ class RDFSIFTS
 
   def uniprotConvert
   #########################################################
-  #    『RDF-SIFTS uniprotConvert』メソッド
+  #    Method of RDF-SIFTS "uniprotConvert"
   #########################################################
 #
 #=begin
     #########################################################
-    #    RDF.rbでクラス定義されていないPREFIXの読み込み
+    #    Load the undefined Classes into prefix of SPARQL in "RDF.rb".
     #########################################################
     edam = RDF::Vocabulary.new("http://edamontology.org/")
     pdbo = RDF::Vocabulary.new("http://rdf.wwpdb.org/schema/pdbx-v40.owl#")
@@ -397,7 +397,7 @@ class RDFSIFTS
     ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
-    #   RDFのグラフモデルの組み立て 『RDF-SIFTS UniProt』 
+    #   Construct the graph model of RDF for RDF-SIFTS "UniProt" 
     #########################################################
     print "The transformation of RDF-SIFTS UniProt "
     RDF::Writer.open("./result/pdb_chain_uniprot.nt") do |writer|
@@ -491,11 +491,11 @@ class RDFSIFTS
 
   def interproGet
   #########################################################
-  #    『RDF-SIFTS interproGet』メソッド
+  #    Method of RDF-SIFTS "interproGet"
   #########################################################
 #=begin
     #########################################################
-    #    FTPを用いてEBIから最新のSIFTSデータを取得
+    #    Fetch the latest data of SIFTS from EBI using FTP.
     #########################################################
     print "The obtain of the latest SIFTS InterPro from EBI "
     ftp = Net::FTP.new('ftp.ebi.ac.uk')
@@ -511,12 +511,12 @@ class RDFSIFTS
 
   def interproConvert
   #########################################################
-  #    『RDF-SIFTS interproConvert』メソッド
+  #    Method of RDF-SIFTS "interproConvert"
   #########################################################
 #
 #=begin
     #########################################################
-    #    RDF.rbでクラス定義されていないPREFIXの読み込み
+    #    Load the undefined Classes into prefix of SPARQL in "RDF.rb".
     #########################################################
     edam = RDF::Vocabulary.new("http://edamontology.org/")
     pdbo = RDF::Vocabulary.new("http://rdf.wwpdb.org/schema/pdbx-v40.owl#")
@@ -526,7 +526,7 @@ class RDFSIFTS
     ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
-    #   RDFのグラフモデルの組み立て 『RDF-SIFTS InterPro』 
+    #   Construct the graph model of RDF for RDF-SIFTS "InterPro" 
     #########################################################
     print "The transformation of RDF-SIFTS InterPro "
     RDF::Writer.open("./result/pdb_chain_interpro.nt") do |writer|
@@ -566,11 +566,11 @@ class RDFSIFTS
 
   def goGet
   #########################################################
-  #    『RDF-SIFTS goGet』メソッド
+  #    Method of RDF-SIFTS "goGet"
   #########################################################
 #=begin
     #########################################################
-    #    FTPを用いてEBIから最新のSIFTSデータを取得
+    #    Fetch the latest data of SIFTS from EBI using FTP.
     #########################################################
     print "The obtain of the latest SIFTS GO from EBI "
     ftp = Net::FTP.new('ftp.ebi.ac.uk')
@@ -586,12 +586,12 @@ class RDFSIFTS
 
   def goConvert
   #########################################################
-  #    『RDF-SIFTS goConvert』メソッド
+  #    Method of RDF-SIFTS "goConvert"
   #########################################################
 #
 #=begin
     #########################################################
-    #    RDF.rbでクラス定義されていないPREFIXの読み込み
+    #    Load the undefined Classes into prefix of SPARQL in "RDF.rb".
     #########################################################
     edam = RDF::Vocabulary.new("http://edamontology.org/")
     pdbo = RDF::Vocabulary.new("http://rdf.wwpdb.org/schema/pdbx-v40.owl#")
@@ -604,7 +604,7 @@ class RDFSIFTS
     ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
-    #   RDFのグラフモデルの組み立て 『RDF-SIFTS GO』 
+    #   Construct the graph model of RDF for RDF-SIFTS "GO" 
     #########################################################
     print "The transformation of RDF-SIFTS GO "
     RDF::Writer.open("./result/pdb_chain_go.nt") do |writer|
@@ -666,11 +666,11 @@ class RDFSIFTS
 
   def pfamGet
   #########################################################
-  #    『RDF-SIFTS pfamGet』メソッド
+  #    Method of RDF-SIFTS "pfamGet"
   #########################################################
 #=begin
     #########################################################
-    #    FTPを用いてEBIから最新のSIFTSデータを取得
+    #    Fetch the latest data of SIFTS from EBI using FTP.
     #########################################################
     print "The obtain of the latest SIFTS Pfam from EBI "
     ftp = Net::FTP.new('ftp.ebi.ac.uk')
@@ -686,12 +686,12 @@ class RDFSIFTS
 
   def pfamConvert
   #########################################################
-  #    『RDF-SIFTS pfamConvert』メソッド
+  #    Method of RDF-SIFTS "pfamConvert"
   #########################################################
 #
 #=begin
     #########################################################
-    #    RDF.rbでクラス定義されていないPREFIXの読み込み
+    #    Load the undefined Classes into prefix of SPARQL in "RDF.rb".
     #########################################################
     edam = RDF::Vocabulary.new("http://edamontology.org/")
     pdbo = RDF::Vocabulary.new("http://rdf.wwpdb.org/schema/pdbx-v40.owl#")
@@ -703,7 +703,7 @@ class RDFSIFTS
     ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
-    #   RDFのグラフモデルの組み立て 『RDF-SIFTS Pfam』 
+    #   Construct the graph model of RDF for RDF-SIFTS "Pfam" 
     #########################################################
     print "The transformation of RDF-SIFTS Pfam "
     RDF::Writer.open("./result/pdb_chain_pfam.nt") do |writer|
@@ -749,11 +749,11 @@ class RDFSIFTS
 
   def enzymeGet
   #########################################################
-  #    『RDF-SIFTS enzymeGet』メソッド
+  #    Method of RDF-SIFTS "enzymeGet"
   #########################################################
 #=begin
     #########################################################
-    #    FTPを用いてEBIから最新のSIFTSデータを取得
+    #    Fetch the latest data of SIFTS from EBI using FTP.
     #########################################################
     print "The obtain of the latest SIFTS Enzyme from EBI "
     ftp = Net::FTP.new('ftp.ebi.ac.uk')
@@ -769,12 +769,12 @@ class RDFSIFTS
 
   def enzymeConvert
   #########################################################
-  #    『RDF-SIFTS enzymeConvert』メソッド
+  #    Method of RDF-SIFTS "enzymeConvert"
   #########################################################
 #
 #=begin
     #########################################################
-    #    RDF.rbでクラス定義されていないPREFIXの読み込み
+    #    Load the undefined Classes into prefix of SPARQL in "RDF.rb".
     #########################################################
     edam = RDF::Vocabulary.new("http://edamontology.org/")
     pdbo = RDF::Vocabulary.new("http://rdf.wwpdb.org/schema/pdbx-v40.owl#")
@@ -787,7 +787,7 @@ class RDFSIFTS
     ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
-    #   RDFのグラフモデルの組み立て 『RDF-SIFTS Enzyme』 
+    #   Construct the graph model of RDF for RDF-SIFTS "Enzyme" 
     #########################################################
     print "The transformation of RDF-SIFTS Enzyme "
     RDF::Writer.open("./result/pdb_chain_enzyme.nt") do |writer|
@@ -841,12 +841,12 @@ class RDFSIFTS
 
   def asymConvert
   #########################################################
-  #    『RDF-SIFTS asymConvert』メソッド
+  #    Metho of RDF-SIFTS asymConvert
   #########################################################
 #
 #=begin
     #########################################################
-    #    RDF.rbでクラス定義されていないPREFIXの読み込み
+    #    Load the undefined Classes into prefix of SPARQL in "RDF.rb".
     #########################################################
     edam = RDF::Vocabulary.new("http://edamontology.org/")
     pdbo = RDF::Vocabulary.new("http://rdf.wwpdb.org/schema/pdbx-v40.owl#")
@@ -859,7 +859,7 @@ class RDFSIFTS
     ut = RDF::Vocabulary.new("http://utprot.net/")
 
     #########################################################
-    #   RDFのグラフモデルの組み立て 『RDF-SIFTS Asym』 
+    #   Construct the graph model of RDF for RDF-SIFTS "Asym" 
     #########################################################
     print "The transformation of RDF-SIFTS Asym "
     RDF::Writer.open("./result/pdb_chain_labelasym.nt") do |writer|
@@ -905,7 +905,7 @@ end
 
 
 #########################################################
-#   コマンドラインオプション
+#   The command line options
 #########################################################
 opts = OptionParser.new
 opts.banner = "Usage: rdf-sifts-maker.rb [options]"
@@ -914,7 +914,7 @@ opts.separator ""
 opts.separator "Specific options:"
 
 # Full download and covert
-opts.on("-f", "--full", "Download SIFTS from EBI and convert to all RDF-SIFTS.") do |all|
+opts.on("-f", "--full", "Fetch the SIFTS from EBI and convert to the RDF format on all RDF-SIFTS.") do |all|
   run = RDFSIFTS.new
   run.cathGet
   run.cathConvert
@@ -938,7 +938,7 @@ opts.on("-f", "--full", "Download SIFTS from EBI and convert to all RDF-SIFTS.")
 end
 
 # All convert
-opts.on("-r", "--run", "Convert to all RDF-SIFTS.") do |all|
+opts.on("-r", "--run", "Convert all datum to RDF format on RDF-SIFTS without download process.") do |all|
   run = RDFSIFTS.new
   run.cathConvert
   run.enzymeConvert
@@ -953,7 +953,7 @@ opts.on("-r", "--run", "Convert to all RDF-SIFTS.") do |all|
 end
 
 # All download
-opts.on("-d", "--download", "Download all RDF-SIFTS from EBI.") do |all|
+opts.on("-d", "--download", "Fetch all RDF-SIFTS datum from EBI withouth convering process.") do |all|
   run = RDFSIFTS.new
   run.cathGet
   run.enzymeGet
@@ -967,128 +967,128 @@ opts.on("-d", "--download", "Download all RDF-SIFTS from EBI.") do |all|
 end
 
 # Download and Convert about each file
-opts.on("-a", "--asym", "Convert to the RDF-SIFTS Asym.") do |asym|
+opts.on("-a", "--asym", "Convert the list of protein chain id link between PDB author asym and PDB lable asym to the RDF-SIFTS Asym.") do |asym|
   run = RDFSIFTS.new
   run.asymConvert
 end
-opts.on("-c", "--cath", "Download & convert to the RDF-SIFTS CATH.") do |cath|
+opts.on("-c", "--cath", "Fetch and convert the file of SIFTS CATH by EBI to the RDF-SIFTS CATH.") do |cath|
   run = RDFSIFTS.new
   run.cathGet
   run.cathConvert
 end
-opts.on("-e", "--enzyme", "Download & convert to the RDF-SIFTS Enzyme.") do |enzyme|
+opts.on("-e", "--enzyme", "Fetch and convert the file of SIFTS Enzyme by EBI to the RDF-SIFTS Enzyme.") do |enzyme|
   run = RDFSIFTS.new
   run.enzymeGet
   run.enzymeConvert
 end
-opts.on("-g", "--go", "Download & convert to the RDF-SIFTS GO.") do |go|
+opts.on("-g", "--go", "Fetch and convert to the file of SIFTS GO by EBI to the RDF-SIFTS GO.") do |go|
   run = RDFSIFTS.new
   run.goGet
   run.goConvert
 end
-opts.on("-i", "--interpro", "Download & convert to the RDF-SIFTS InterPro.") do |interpro|
+opts.on("-i", "--interpro", "Fetch and convert the file of SIFTS InterPro by EBI to the RDF-SIFTS InterPro.") do |interpro|
   run = RDFSIFTS.new
   run.interproGet
   run.interproConvert
 end
-opts.on("-m", "--pubmed", "Download & convert to the RDF-SIFTS PubMed.") do |pubmed|
+opts.on("-m", "--pubmed", "Fetch and convert the file of SIFTS PubMed by EBI to the RDF-SIFTS PubMed.") do |pubmed|
   run = RDFSIFTS.new
   run.pubmedGet
   run.pubmedConvert
 end
-opts.on("-p", "--pfam", "Download & convert to the RDF-SIFTS Pfam.") do |pfam|
+opts.on("-p", "--pfam", "Fetch and convert to the file of SIFTS Pfam by EBI to the RDF-SIFTS Pfam.") do |pfam|
   run = RDFSIFTS.new
   run.pfamGet
   run.pfamConvert 
 end
-opts.on("-s", "--scop", "Download & convert to the RDF-SIFTS SCOP.") do |scop|
+opts.on("-s", "--scop", "Fetch and convert to the file of SIFTS SCOP by EBI to the RDF-SIFTS SCOP.") do |scop|
   run = RDFSIFTS.new
   run.scopGet
   run.scopConvert
 end
-opts.on("-t", "--taxonomy", "Download & convert to the RDF-SIFTS Taxonomy.") do |taxonomy|
+opts.on("-t", "--taxonomy", "Fetch and convert to the file of SIFTS Taxonomy by EBI to the RDF-SIFTS Taxonomy.") do |taxonomy|
   run = RDFSIFTS.new
   run.taxonomyGet
   run.taxonomyConvert
 end
-opts.on("-u", "--uniprot", "Download & convert to the RDF-SIFTS UniProt.") do |uniprot|
+opts.on("-u", "--uniprot", "Fetch and convert to the file of SIFTS UniProt by EBI to the RDF-SIFTS UniProt.") do |uniprot|
   run = RDFSIFTS.new
   run.uniprotGet
   run.uniprotConvert
 end
 
 # Download only about each file
-opts.on("--cath-download", "Download the SIFTS CATH from EBI.") do |cath1|
+opts.on("--cath-download", "Fetch the file of SIFTS CATH from EBI.") do |cath1|
   run = RDFSIFTS.new
   run.cathGet
 end
-opts.on("--enzyme-download", "Download the SIFTS Enzyme from EBI.") do |enzyme1|
+opts.on("--enzyme-download", "Fetch the file of SIFTS Enzyme from EBI.") do |enzyme1|
   run = RDFSIFTS.new
   run.enzymeGet
 end
-opts.on("--go-download", "Download the SIFTS GO from EBI.") do |go1|
+opts.on("--go-download", "Fetch the file of SIFTS GO from EBI.") do |go1|
   run = RDFSIFTS.new
   run.goGet
 end
-opts.on("--interpro-download", "Download the SIFTS InterPro from EBI.") do |interpro1|
+opts.on("--interpro-download", "Fetch the file of SIFTS InterPro from EBI.") do |interpro1|
   run = RDFSIFTS.new
   run.interproGet
 end
-opts.on("--pubmed-download", "Download the RDF-SIFTS PubMed from EBI.") do |pubmed1|
+opts.on("--pubmed-download", "Fetch the file of RDF-SIFTS PubMed from EBI.") do |pubmed1|
   run = RDFSIFTS.new
   run.pubmedGet
 end
-opts.on("--pfam-download", "Download the SIFTS Pfam from EBI.") do |pfam1|
+opts.on("--pfam-download", "Fetch the file of SIFTS Pfam from EBI.") do |pfam1|
   run = RDFSIFTS.new
   run.pfamGet
 end
-opts.on("--scop-download", "Download the SIFTS SCOP from EBI.") do |scop1|
+opts.on("--scop-download", "Fetch the file of SIFTS SCOP from EBI.") do |scop1|
   run = RDFSIFTS.new
   run.scopGet
 end
-opts.on("--taxonomy-download", "Download the SIFTS Taxonomy from EBI.") do |taxonomy1|
+opts.on("--taxonomy-download", "Fetch the file of SIFTS Taxonomy from EBI.") do |taxonomy1|
   run = RDFSIFTS.new
   run.taxonomyGet
 end
-opts.on("--uniprot-download", "Download the SIFTS UniProt from EBI.") do |uniprot1|
+opts.on("--uniprot-download", "Fetch the file of SIFTS UniProt from EBI.") do |uniprot1|
   run = RDFSIFTS.new
   run.uniprotGet
 end
 
 # Convert about each file
-opts.on("--cath-convert", "Convert to the RDF-SIFTS CATH.") do |cath2|
+opts.on("--cath-convert", "Convert the file of SIFTS CATH by EBI to the RDF-SIFTS CATH.") do |cath2|
   run = RDFSIFTS.new
   run.cathConvert
 end
-opts.on("--enzyme-convert", "Convert to the RDF-SIFTS Enzyme.") do |enzyme2|
+opts.on("--enzyme-convert", "Convert the file of SIFTS Enzyme by EBI to the RDF-SIFTS Enzyme.") do |enzyme2|
   run = RDFSIFTS.new
   run.enzymeConvert
 end
-opts.on("--go-convert", "Convert to the RDF-SIFTS GO.") do |go2|
+opts.on("--go-convert", "Convert the file of SIFTS GO by EBI to the RDF-SIFTS GO.") do |go2|
   run = RDFSIFTS.new
   run.goConvert
 end
-opts.on("--interpro-convert", "Convert to the RDF-SIFTS InterPro.") do |interpro2|
+opts.on("--interpro-convert", "Convert the file of SIFTS InterPro by EBI to the RDF-SIFTS InterPro.") do |interpro2|
   run = RDFSIFTS.new
   run.interproConvert
 end
-opts.on("--pubmed-convert", "Convert to the RDF-SIFTS PubMed.") do |pubmed2|
+opts.on("--pubmed-convert", "Convert the file of SIFTS PubMed by EBI to the RDF-SIFTS PubMed.") do |pubmed2|
   run = RDFSIFTS.new
   run.pubmedConvert
 end
-opts.on("--pfam-convert", "Convert to the RDF-SIFTS Pfam.") do |pfam2|
+opts.on("--pfam-convert", "Convert the file of SIFTS Pfam by EBI to the RDF-SIFTS Pfam.") do |pfam2|
   run = RDFSIFTS.new
   run.pfamConvert 
 end
-opts.on("--scop-convert", "Convert to the RDF-SIFTS SCOP.") do |scop2|
+opts.on("--scop-convert", "Convert the file of SIFTS SCOP by EBI to the RDF-SIFTS SCOP.") do |scop2|
   run = RDFSIFTS.new
   run.scopConvert
 end
-opts.on("--taxonomy-convert", "Convert to the RDF-SIFTS Taxonomy.") do |taxonomy2|
+opts.on("--taxonomy-convert", "Convert the file of SIFTS Taxonomy by EBI to the RDF-SIFTS Taxonomy.") do |taxonomy2|
   run = RDFSIFTS.new
   run.taxonomyConvert
 end
-opts.on("--uniprot-convert", "Convert to the RDF-SIFTS UniProt.") do |uniprot2|
+opts.on("--uniprot-convert", "Convert the file of SIFTS UniProt by EBI to the RDF-SIFTS UniProt.") do |uniprot2|
   run = RDFSIFTS.new
   run.uniprotConvert
 end
@@ -1098,7 +1098,7 @@ end
 opts.separator ""
 opts.separator "Common options:"
 
-opts.on_tail("-h", "--help", "Show this message") do
+opts.on_tail("-h", "--help", "Show this message.") do
   puts opts
   exit
 end
