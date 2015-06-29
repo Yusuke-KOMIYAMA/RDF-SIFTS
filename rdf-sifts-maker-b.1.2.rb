@@ -938,7 +938,7 @@ opts.on("-f", "--full", "Fetch the SIFTS from EBI and convert to the RDF format 
 end
 
 # All convert
-opts.on("-r", "--run", "Convert all datum to RDF format on RDF-SIFTS without download process.") do |all|
+opts.on("-r", "--run", "Convert all data to RDF format on RDF-SIFTS without download process.") do |all|
   run = RDFSIFTS.new
   run.cathConvert
   run.enzymeConvert
@@ -953,7 +953,7 @@ opts.on("-r", "--run", "Convert all datum to RDF format on RDF-SIFTS without dow
 end
 
 # All download
-opts.on("-d", "--download", "Fetch all RDF-SIFTS datum from EBI withouth convering process.") do |all|
+opts.on("-d", "--download", "Fetch all RDF-SIFTS data from EBI withouth convering process.") do |all|
   run = RDFSIFTS.new
   run.cathGet
   run.enzymeGet
@@ -971,47 +971,47 @@ opts.on("-a", "--asym", "Convert the list of protein chain id link between PDB a
   run = RDFSIFTS.new
   run.asymConvert
 end
-opts.on("-c", "--cath", "Fetch and convert the file of SIFTS CATH by EBI to the RDF-SIFTS CATH.") do |cath|
+opts.on("-c", "--cath", "Fetch the file of SIFTS CATH by EBI and convert to the RDF-SIFTS CATH.") do |cath|
   run = RDFSIFTS.new
   run.cathGet
   run.cathConvert
 end
-opts.on("-e", "--enzyme", "Fetch and convert the file of SIFTS Enzyme by EBI to the RDF-SIFTS Enzyme.") do |enzyme|
+opts.on("-e", "--enzyme", "Fetch the file of SIFTS Enzyme by EBI and convert to the RDF-SIFTS Enzyme.") do |enzyme|
   run = RDFSIFTS.new
   run.enzymeGet
   run.enzymeConvert
 end
-opts.on("-g", "--go", "Fetch and convert to the file of SIFTS GO by EBI to the RDF-SIFTS GO.") do |go|
+opts.on("-g", "--go", "Fetch the file of SIFTS GO by EBI and convert to the RDF-SIFTS GO.") do |go|
   run = RDFSIFTS.new
   run.goGet
   run.goConvert
 end
-opts.on("-i", "--interpro", "Fetch and convert the file of SIFTS InterPro by EBI to the RDF-SIFTS InterPro.") do |interpro|
+opts.on("-i", "--interpro", "Fetch the file of SIFTS InterPro by EBI and convert to the RDF-SIFTS InterPro.") do |interpro|
   run = RDFSIFTS.new
   run.interproGet
   run.interproConvert
 end
-opts.on("-m", "--pubmed", "Fetch and convert the file of SIFTS PubMed by EBI to the RDF-SIFTS PubMed.") do |pubmed|
+opts.on("-m", "--pubmed", "Fetch the file of SIFTS PubMed by EBI and convert to the RDF-SIFTS PubMed.") do |pubmed|
   run = RDFSIFTS.new
   run.pubmedGet
   run.pubmedConvert
 end
-opts.on("-p", "--pfam", "Fetch and convert to the file of SIFTS Pfam by EBI to the RDF-SIFTS Pfam.") do |pfam|
+opts.on("-p", "--pfam", "Fetch the file of SIFTS Pfam by EBI and convert to the RDF-SIFTS Pfam.") do |pfam|
   run = RDFSIFTS.new
   run.pfamGet
   run.pfamConvert 
 end
-opts.on("-s", "--scop", "Fetch and convert to the file of SIFTS SCOP by EBI to the RDF-SIFTS SCOP.") do |scop|
+opts.on("-s", "--scop", "Fetch the file of SIFTS SCOP by EBI and convert to the RDF-SIFTS SCOP.") do |scop|
   run = RDFSIFTS.new
   run.scopGet
   run.scopConvert
 end
-opts.on("-t", "--taxonomy", "Fetch and convert to the file of SIFTS Taxonomy by EBI to the RDF-SIFTS Taxonomy.") do |taxonomy|
+opts.on("-t", "--taxonomy", "Fetch the file of SIFTS Taxonomy by EBI and convert to the RDF-SIFTS Taxonomy.") do |taxonomy|
   run = RDFSIFTS.new
   run.taxonomyGet
   run.taxonomyConvert
 end
-opts.on("-u", "--uniprot", "Fetch and convert to the file of SIFTS UniProt by EBI to the RDF-SIFTS UniProt.") do |uniprot|
+opts.on("-u", "--uniprot", "Fetch the file of SIFTS UniProt by EBI and convert to the RDF-SIFTS UniProt.") do |uniprot|
   run = RDFSIFTS.new
   run.uniprotGet
   run.uniprotConvert
