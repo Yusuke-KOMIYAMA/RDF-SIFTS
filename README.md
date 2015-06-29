@@ -1,7 +1,7 @@
 # RDF-SIFTS maker (beta 1.3)
 =========
 
----
+```
 Usage: rdf-sifts-maker.rb [options]
 
 Specific options:
@@ -39,4 +39,4 @@ Specific options:
 
 Common options:
     -h, --help                       Show this message.
----
+```
